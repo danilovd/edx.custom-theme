@@ -1,0 +1,375 @@
+#fd-header .fd-container,
+#fd-footer .fd-container {
+    margin: 0 auto;
+}
+
+#fd-header .span2,
+#fd-footer .span2 {
+    display: block;
+    min-height: 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#fd-header .span10,
+#fd-footer .span10 {
+    display: block;
+    min-height: 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#fd-header .fd-container:after,
+#fd-footer .fd-container:after {
+    clear: both;
+}
+
+#fd-header .row:after,
+#fd-footer .row:after {
+    clear: both;
+}
+
+#fd-header {
+    background: rgb(249, 246, 239);
+    box-shadow: inset 0 -4px 8px -2px rgba(0, 0, 0, 0.2);
+    min-height: 30px;
+    padding: 0 35px;
+}
+
+#fd-logo {
+    max-height: 60px;
+}
+
+#fd-footer,
+#fd-footer .fd-container {
+    background: #490707;
+    color: #e3dfd5;
+    box-shadow: inset 0 4px 8px -2px rgba(0, 0, 0, 0.2);
+}
+
+#fd-header .fd-container img {
+    box-sizing: content-box;
+    padding: 4px 0 0 10px;
+}
+
+#fd-footer a {
+    color: #e3dfd5;
+}
+
+#fd-footer a:hover {
+    text-decoration: underline;
+}
+
+#fd-footer .fd-container {
+    padding: 5px 15px 20px;
+}
+
+#fd-footer .fd-container .fd-row {
+    margin: 20px 0 0 0;
+}
+
+#fd-footer-logo {
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+#fd-footer-text {
+    margin-top: 0;
+}
+
+#fd-footer-text ul {
+    margin: 0 0 0 12%;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+#fd-footer-text ul#policy-links {
+    margin-bottom: 10px;
+}
+
+#fd-footer-text ul li {
+    display: block;
+    list-style: none;
+}
+
+#fd-footer-text ul li a {
+    font-family: 'Ubuntu Mono', monospace;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#fd-footer p.copyright {
+    width: auto;
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 0;
+    line-height: 1.5em;
+    padding-top: 0px;
+    font-size: 14px;
+}
+
+#fd-footer * {
+    box-sizing: content-box;
+}
+
+#fd-footer .span2 {
+    width: 100%;
+    text-align: center;
+}
+
+#fd-footer .span10 {
+    width: 100%;
+}
+
+#fd-footer ul {
+    float: left;
+    width: 35%;
+}
+
+#fd-footer img {
+    margin: 0 auto;
+    display: block;
+    box-sizing: content-box;
+}
+
+#fd-footer .clear {
+    clear: both;
+    margin-bottom: 10px;
+}
+
+#fd-footer .social-logo {
+    max-height: 30px
+}
+
+/* Media queries */
+@media screen and (min-width: 576px) {
+    #fd-footer .fd-container {
+        background: none;
+        box-shadow: none;
+    }
+
+    #fd-footer-text ul {
+        margin-left: 0;
+    }
+
+    #fd-header .fd-container,
+    #fd-footer .fd-container {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #fd-footer .fd-container .row {
+        margin: 30px 0 0 -20px;
+    }
+
+    #fd-footer ul li.alt {
+        clear: right;
+    }
+
+    #fd-footer ul {
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+
+    #fd-footer ul li {
+        width: auto;
+        margin: 0 5px 3px 5px;
+        padding: 0;
+        float: none;
+        clear: left;
+        display: inline-block;
+    }
+
+    #fd-footer #global-links a {
+        color: #ffffff;
+    }
+
+    #fd-footer-text ul#policy-links li a {
+        font-size: 14px;
+    }
+
+    #fd-footer .clear {
+        clear: both;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #fd-header .fd-container img {
+        padding: 4px 0 0;
+    }
+
+    #fd-footer ul {
+        text-align: left;
+    }
+
+    #fd-footer ul li {
+        margin: 0 13px 3px 0;
+    }
+
+    #fd-footer .span2 {
+        float: left;
+        width: 104px;
+    }
+
+    #fd-footer .span10 {
+        width: 500px;
+        margin: 0 10px 0 20px;
+        float: left;
+    }
+
+    #fd-footer img {
+        margin: 0 auto;
+    }
+
+    #fd-footer-logo img {
+        margin: 0;
+        max-width: 150px;
+    }
+
+    #fd-footer p.copyright {
+        text-align: left;
+        padding-left: 125px;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    #fd-header .fd-container,
+    #fd-footer .fd-container {
+        width: 100%;
+    }
+
+    #fd-footer .span2 {
+        width: 140px;
+    }
+
+    #fd-footer .span10 {
+        width: 740px;
+    }
+
+    #fd-footer p.copyright {
+        padding-left: 160px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #fd-header .fd-container,
+    #fd-footer .fd-container {
+        width: 100%;
+    }
+
+    #fd-footer .span2 {
+        width: 140px;
+    }
+
+    #fd-footer .span10 {
+        width: 970px;
+    }
+
+    #fd-footer p.copyright {
+        padding-left: 160px;
+    }
+}
+
+@media (max-width: 767px) {
+    #fd-footer p.copyright {
+        text-align: center;
+    }
+}
+
+/* Studio header styling */
+@media screen and (min-width: 1280px) {
+    .wrapper #fd-header .fd-container,
+    .wrapper #fd-footer .fd-container {
+        width: 1280px;
+    }
+}
+
+
+.home>header .outer-wrapper {
+    padding: 100px;
+}
+
+.home>header .title {
+    background-color: rgba(255, 255, 255, 0.0);
+    box-shadow: none;
+}
+
+.home>header .title>.heading-group h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    text-align: left;
+}
+.home>header .title>.heading-group h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    text-align: left;
+}
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.marketing h3 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+.partner-logo img {
+    max-width: 150px;
+}
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+    background-color: #777;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+
+#header-logo img {
+    max-height: 60px;
+}
