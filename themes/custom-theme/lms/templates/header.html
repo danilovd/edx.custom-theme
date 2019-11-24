@@ -21,13 +21,13 @@ from openedx.core.djangolib.markup import HTML, Text
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top d-flex flex-row-reverse">
+        <!--button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button-->
 
         <div class="btn-group">
-            <<a class="btn btn-primary" href="/register">${_("Register")}</a>
+            <a class="btn btn-primary" href="/register">${_("Register")}</a>
             <a class="btn btn-success" href="/login">${_("Sign in")}</a>
         </div>
 
