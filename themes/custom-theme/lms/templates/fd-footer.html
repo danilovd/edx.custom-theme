@@ -3,50 +3,41 @@
 <%namespace name='static' file='/static_content.html'/>
 
 <div id="fd-footer">
-    <div class="fd-container">
-        <div class="fd-row">
-            <div id="fd-footer-logo" class="span2">
-                <a href="https://www.firstdigital.institute">
-                    <img
-                            src="${static.url('images/logo.png')}"
-                            alt="First Digital Institute"
-                    />
-                </a>
-            </div>
-            <div id="fd-footer-text" class="row">
-                <ul id="global-links">
-                    <li class="about"><a href="/about">Информация</a></li>
-                    <li class="courses"><a href="/search/">Каталог курсов</a></li>
-                    <li class="contacts"><a href="/contacts">Контакты</a></li>
-                </ul>
-                <ul id="social-links">
-                    <li class="alt">
-                        <a href="https://institute.us5.list-manage.com/track/click?u=68cd74c0bbbf1db2e8098cf97&id=ed87a1f071&e=6f87cca1d8">
-                            <img class="social-logo" src="${static.url('images/social/vk_logo_light.png')}"/>
-                        </a>
-                    </li>
-                    <li class="alt">
-                        <a href="https://institute.us5.list-manage.com/track/click?u=68cd74c0bbbf1db2e8098cf97&amp;id=4fe907734d&amp;e=6f87cca1d8">
-                            <img class="social-logo" src="${static.url('images/social/facebook_logo_light.png')}"/>
-                        </a>
-                    </li>
-                    <li class="alt">
-                        <a href="http://t.me/firstdigital">
-                            <img class="social-logo" src="${static.url('images/social/telegram_logo_light.png')}"/>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="clear"></div>
-            <p class="copyright vcard">
-                <span>&copy;</span>
-                <span class="year">2019 </span>
-                <span class="fn org">ООО "Первый цифровой институт"</span>.
-                <span class="adr">
-                    <span class="locality">Москва</span>,
-                    <span class="region">ул. Летниковская 4, стр. 5</span>
-                </span>
-            </p>
+    <div class="row">
+        <div class="col-sm" class="span2">
+            <a href="https://www.firstdigital.institute">
+                <img
+                        src="${static.url('images/logo.png')}"
+                        alt="First Digital Institute"
+                />
+            </a>
         </div>
+        <div class="col-sm">
+            <div class="row">
+                <div class="col-xs"><a href="/about">Информация</a></div>
+                <div class="col-xs"><a href="/search">Каталог курсов</a></div>
+                <div class="col-xs"><a href="/contact">Контакты</a></div>
+            </div>
+            <ul class="row">
+                <div class="col-xs">
+                    <a href="https://institute.us5.list-manage.com/track/click?u=68cd74c0bbbf1db2e8098cf97&id=ed87a1f071&e=6f87cca1d8">
+                        <img class="social-logo" src="${static.url('images/social/vk_logo_light.png')}"/>
+                    </a>
+                </div>
+                <div class="col-xs">
+                    <a href="https://institute.us5.list-manage.com/track/click?u=68cd74c0bbbf1db2e8098cf97&amp;id=4fe907734d&amp;e=6f87cca1d8">
+                        <img class="social-logo" src="${static.url('images/social/facebook_logo_light.png')}"/>
+                    </a>
+                </div>
+                <div class="col-xs">
+                    <a href="http://t.me/firstdigital">
+                        <img class="social-logo" src="${static.url('images/social/telegram_logo_light.png')}"/>
+                    </a>
+                </div>
+            </ul>
+        </div>
+        <p>
+            <small>2019 ООО "Первый цифровой институт" &copy;</small>
+        </p>
     </div>
 </div>
