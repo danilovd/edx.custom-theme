@@ -9,10 +9,6 @@ body {
   background-color: $light-sandstone;
 }
 
-.wrapper-footer {
-  background-color: $light-sandstone;
-}
-
 header {
 
   #fd-header-logo {
@@ -69,8 +65,11 @@ header {
 
 // FOOTER SETTINGS
 
-#fd-footer {
+.wrapper-footer {
   background-color: $cardinal-red;
+}
+
+#fd-footer {
 
   .fd-logo {
     display: contents;
@@ -81,7 +80,8 @@ header {
   }
 
   .social-logo {
-    max-height: 2rem;
+    max-height: 1.5rem;
+    padding-left: 1rem;
   }
 
   .footer-link {
