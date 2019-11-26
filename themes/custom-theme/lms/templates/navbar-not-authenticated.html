@@ -1,0 +1,17 @@
+## mako
+
+<%page expression_filter="h"/>
+<%namespace name='static' file='../static_content.html'/>
+
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top d-flex flex-row-reverse">
+    <!--button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button-->
+
+    <div class="btn-group">
+        <a class="btn btn-primary" href="/register">${_("Register")}</a>
+        <a class="btn btn-success" href="/login">${_("Sign in")}</a>
+    </div>
+
+</nav>
