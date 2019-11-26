@@ -3,6 +3,12 @@
 <%page expression_filter="h"/>
 <%namespace name='static' file='../static_content.html'/>
 
+<%!
+from django.urls import reverse
+from django.utils.translation import ugettext as _
+from six import text_type
+%>
+
 
 <nav class="navbar navbar-expand-md navbar-dark fixed-top d-flex flex-row-reverse">
     <!--button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
