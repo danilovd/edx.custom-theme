@@ -27,7 +27,7 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 %>
 
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <!--a class="navbar-brand" href="#">Navbar</a-->
     <!--button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,13 +43,13 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
             </li>
             % if show_program_listing:
             <li class="nav-item">
-                <a class="${'active ' if reverse('program_listing_view') in request.path else ''}tab-nav-link" href="${reverse('program_listing_view')}">
+                <a class="${'active ' if reverse('program_listing_view') in request.path else ''} nav-link" href="${reverse('program_listing_view')}">
                     ${_("Programs")}
                 </a>
             </li>
             % endif
             <li class="nav-item">
-                <a class="${'active ' if '/u/' in request.path  else ''}tab-nav-link" href="${reverse('learner_profile', args=[self.real_user.username])}">
+                <a class="${'active ' if '/u/' in request.path  else ''} nav-link" href="${reverse('learner_profile', args=[self.real_user.username])}">
                     ${_("Profile")}
                 </a>
             </li>
