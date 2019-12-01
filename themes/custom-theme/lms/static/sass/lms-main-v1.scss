@@ -6,6 +6,6 @@
 @import 'build-lms-v1'; // shared app style assets/rendering
 
 // FIRST DIGITAL - CUSTOM THEMING
-@import "bootstrap-overrides";
 @import "variables";
 @import 'firstdigital';
+@import "bootstrap-overrides";
