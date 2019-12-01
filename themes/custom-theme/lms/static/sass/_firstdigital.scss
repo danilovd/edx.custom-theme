@@ -79,6 +79,22 @@ header {
   }
 }
 
+.card {
+  ul {
+    text-align: justify;
+  }
+}
+
+.faculty-thumbnail {
+  position: relative;
+
+  .faculty-caption {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+}
+
 
 // FOOTER SETTINGS
 
