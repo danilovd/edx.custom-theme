@@ -2,25 +2,51 @@
 
 <%namespace name='static' file='/static_content.html'/>
 
-<div class="marketing container">
-    <div class="row">
-        <div class="col-lg-4">
-            <img class="img-responsive" src="${static.url('images/icons/trophy.png')}" width="140" height="140">
-            <h3>Курсы лучших университетов мира</h3>
-            <p>Лучшие курсы лучших университетов мира: MIT, Stanford, Harvard и многих других</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Подробнее »</a></p>
+<div class="container marketing">
+    <h1>Почему вам следует обучаться у нас:</h1>
+
+    <div class="row featurette">
+        <div class="col-md-6 d-flex align-items-center justify-content-end">
+            <div class="text-md-right text-sm-center">
+                <h2 class="featurette-heading">Курсы лучших университетов мира</h2>
+                <p class="lead">Лучшие курсы лучших университетов мира:</p>
+                <p class="lead"><span class="highlights">MIT, Stanford, Harvard</span> и многих других</p>
+            </div>
         </div>
-        <div class="col-lg-4">
-            <img class="img-responsive" src="${static.url('images/icons/speech_recognition.png')}" width="140" height="140">
-            <h3>Полностью на русском языке</h3>
-            <p>Все курсы переведены и озвучены на русский язык с применением современных AI технологий</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Подробнее »</a></p>
+        <div class="col-md-6">
+            <div class="d-flex justify-content-md-start justify-content-center">
+                <img class="featurette-image" src="${static.url('images/misc/pic_01.png')}">
+            </div>
         </div>
-        <div class="col-lg-4">
-            <img class="img-responsive" src="${static.url('images/icons/piggy.png')}" width="140" height="140">
-            <h3>Бесплатно</h3>
-            <p>Все курсы доступны совершенно бесплатно без получения сертификата о прохождении. Доступные цены на сертификацию</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Подробнее »</a></p>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-6 order-md-2 d-flex align-items-center justify-content-start">
+            <div class="text-md-left text-sm-center">
+                <h2 class="featurette-heading">Полностью на русском языке</h2>
+                <p class="lead">Все курсы переведены и озвучены на русский язык</p>
+                <p class="lead">с применением современных AI технологий</p>
+            </div>
+        </div>
+        <div class="col-md-6 order-md-1">
+            <div class="d-flex justify-content-md-end justify-content-center">
+                <img class="featurette-image" src="${static.url('images/misc/pic_02.png')}">
+            </div>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+        <div class="col-md-6 d-flex align-items-center justify-content-end">
+            <div class="text-md-right text-sm-center">
+                <h2 class="featurette-heading">Бесплатно</h2>
+                <p class="lead">Большинство курсов доступны для изучения</p>
+                <p class="lead">совершенно бесплатно</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="d-flex justify-content-md-start justify-content-center">
+                <img class="featurette-image" src="${static.url('images/misc/pic_03.png')}">
+            </div>
         </div>
     </div>
 </div>
