@@ -19,7 +19,12 @@ header {
     background-color: $stanford-white;
 
     #fd-login {
-      width: 160px;
+      margin-left: auto;
+      font-family: $secondary-font;
+    }
+    #fd-register {
+      margin-left: 0.1rem;
+      font-family: $secondary-font;
     }
   }
 
@@ -48,32 +53,43 @@ header {
   }
 }
 
-.carousel-item > img {
-  opacity: 0.4;
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
-}
-
 .jumbotron {
   h1, h2, h3, h4, h5, p {
     color: $stanford-white;
   }
 }
 
-.fd-welcome {
-  bottom: 200px;
+.fd-button-primary-lg {
+  @extend .btn-primary;
+  @extend .btn-lg;
+  background-color: $stanford-white;
+  border-color: $light-red-2;
+  color: $light-red-2;
+  padding: 15px 24px;
+  font-family: $button-font;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: $light-red-2 !important;
+    border-color: $light-red-2 !important;
+    color: $stanford-white;
+  }
 }
 
-.carousel-item {
-  height: 32rem;
-  background-color: $cool-gray;
-}
-
-.carousel-caption {
-  bottom: 10rem;
+.fd-button-lg {
+  @extend .btn-secondary;
+  @extend .btn-lg;
+  background-color: $light-red-2;
+  border-color: $light-red-2;
+  padding: 15px 24px;
+  font-family: $button-font;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($light-red-2, 10%) !important;
+    border-color: darken($light-red-2, 10%) !important;
+    color: $stanford-white;
+  }
 }
 
 // BENEFITS
@@ -92,14 +108,16 @@ header {
   }
 }
 
-.featurette-divider {
-  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
+.section-header {
+  font-size: 56px;
+  font-weight: bold;
 }
 
 .featurette-heading {
-  font-weight: 300;
+  font-size: 1.5rem;
   line-height: 1;
   letter-spacing: -.05rem;
+
 }
 
 // FACULTIES, COURSES
