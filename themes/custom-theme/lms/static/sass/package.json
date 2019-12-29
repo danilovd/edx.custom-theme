@@ -1,0 +1,15 @@
+{
+  "name": "firstdigital",
+  "version": "1.0.0",
+  "description": "This folder is for custom SASS files (Simply Awesome Style Sheets) for Learning Management System",
+  "main": "index.js",
+  "dependencies": {
+    "@edx/edx-bootstrap": "^2.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
