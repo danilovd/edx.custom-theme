@@ -13,10 +13,16 @@ h1,h2,h3,h4,h5,h6 {
 header {
 
   #fd-header-logo {
-    width: 160px;
+    height: 60px;
   }
   nav {
     background-color: $stanford-white;
+
+    #non-auth-header {
+      width: 100%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
 
     #fd-login {
       margin-left: auto;
