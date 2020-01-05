@@ -1,6 +1,8 @@
 @import "palette";
 @import "_myvariables.scss";
 
+$breakpoint-tablet: 768px;
+
 h1,h2,h3,h4,h5,h6 {
   color: $stanford-black;
   font-family: Roboto Slab, serif;
@@ -62,6 +64,12 @@ header {
 .jumbotron {
   h1, h2, h3, h4, h5, p {
     color: $stanford-white;
+  }
+
+  .display-4 {
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 2rem;
+    }
   }
 }
 
