@@ -124,7 +124,10 @@ header {
 }
 
 .section-header {
-  font-size: 56px;
+  font-size: 2rem;
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 3.5rem;
+  }
   font-weight: bold;
 }
 
