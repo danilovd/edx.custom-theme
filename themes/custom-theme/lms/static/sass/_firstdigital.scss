@@ -113,9 +113,12 @@ header {
   margin-top: 2rem;
   margin-bottom: 2rem;
 
-  .featurette-image {
+  .featurette-image img {
+    display:block;
     max-width: 250px;
     max-height: 250px;
+    width: auto;
+    height: auto;
   }
   .featurette .highlights {
     color: $dark-red;
