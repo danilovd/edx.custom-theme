@@ -7,15 +7,24 @@ from django.urls import reverse
 
 from openedx.core.djangolib.markup import HTML, Text
 %>
+
+<%block name="headextra">
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N5J7TBZ');</script>
+</%block>
+
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="home">
 
-        <div class="jumbotron" style="background-image: url(&quot;${static.url('images/cs50.cover_2.jpg')}&quot;); background-size: cover">
+        <div class="jumbotron" style="background-image: url(&quot;${static.url('images/cs50.cover_2_shaded.png')}&quot;); background-size: cover">
             <div class="container text-center">
-                <h1 class="display-4">Добро пожаловать в</h1>
-                <h1 class="display-4">First Digital Institute</h1>
+                <h1 class="display-4">Курсы лучших университетов мира</h1>
+                <h1 class="display-4">на русском языке</h1>
                 <h2>// Онлайн-институт цифровых навыков</h2>
-                <p><a class="btn fd-button-lg" href="#" role="button">Узнать больше</a></p>
+                <p><a class="btn fd-button-lg" href="/about" role="button">Узнать больше</a></p>
             </div>
         </div>
 

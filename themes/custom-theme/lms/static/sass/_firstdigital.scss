@@ -1,8 +1,10 @@
 @import "palette";
 @import "_myvariables.scss";
 
+$breakpoint-tablet: 768px;
+
 h1,h2,h3,h4,h5,h6 {
-  color: $stanford-black;
+  color: $gray-800;
   font-family: Roboto Slab, serif;
 }
 
@@ -13,10 +15,16 @@ h1,h2,h3,h4,h5,h6 {
 header {
 
   #fd-header-logo {
-    width: 160px;
+    max-height: 3rem;
   }
   nav {
     background-color: $stanford-white;
+
+    #non-auth-header {
+      width: 100%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
 
     #fd-login {
       margin-left: auto;
@@ -55,7 +63,14 @@ header {
 
 .jumbotron {
   h1, h2, h3, h4, h5, p {
-    color: $stanford-white;
+    color: $gray-400;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 3.5rem;
+    }
   }
 }
 
@@ -99,8 +114,11 @@ header {
   margin-bottom: 2rem;
 
   .featurette-image {
+    display:block;
     max-width: 250px;
     max-height: 250px;
+    width: auto;
+    height: auto;
   }
   .featurette .highlights {
     color: $dark-red;
@@ -109,7 +127,10 @@ header {
 }
 
 .section-header {
-  font-size: 56px;
+  font-size: 2rem;
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 3.5rem;
+  }
   font-weight: bold;
 }
 
