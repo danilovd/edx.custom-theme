@@ -1,5 +1,6 @@
 <%! from django.utils.translation import ugettext as _ %>
 <%! from openedx.core.djangoapps.site_configuration import helpers as configuration_helpers %>
+<h1>email test1</h1>
 ${_("We received a request to change the e-mail associated with your "
     "{platform_name} account from {old_email} to {new_email}. "
     "If this is correct, please confirm your new e-mail address by "
