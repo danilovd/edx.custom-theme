@@ -1,7 +1,7 @@
 <%! from django.utils.translation import ugettext as _ %>
 
 
-$_("Привет! Пожалуйста, пройдите по ссылке ниже чтобы активировать ваш аккаунт в образовательной платформе {platform_name}.").format(platform_name=platform-name)}
+${"Привет! Пожалуйста, пройдите по ссылке ниже чтобы активировать ваш аккаунт в образовательной платформе {platform_name}.".format(platform_name=platform-name)}
 
 % if is_secure:
 https://${ site }/activate/${ key }
@@ -9,14 +9,14 @@ https://${ site }/activate/${ key }
 http://${ site }/activate/${ key }
 % endif
 
-${_("Желаем успехов и приятного обучения.")}
+${"Желаем успехов и приятного обучения."}
 
-${_("С уважением, команда {platform_name}").format(platform_name=platform_name)}
+${"С уважением, команда {platform_name}".format(platform_name=platform_name)}
 
-${_("Если вам понадобится помощь, напишите нам на {support_email}.").format(
+${"Если вам понадобится помощь, напишите нам на {support_email}.".format(
   support_email=support_email
 )}
 
-${_("Это сообщение было сгенерировано автоматически {lms_url} так как кто-то попытался зарегистрироваться в {platform_name} используя ваш email").format(
+${"Это сообщение было сгенерировано автоматически {lms_url} так как кто-то попытался зарегистрироваться в {platform_name} используя ваш email".format(
   lms_url=lms_url, platform_name=platform_name
 )}
