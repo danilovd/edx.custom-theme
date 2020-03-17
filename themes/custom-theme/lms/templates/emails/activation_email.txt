@@ -1,8 +1,7 @@
 <%! from django.utils.translation import ugettext as _ %>
 
-${_("You're almost there! Use the link below to activate your account to access ")}
-${_("engaging, high-quality {platform_name} courses. Note that you will not be ").format(platform_name=platform_name)}
-${_("able to log back into your account until you have activated it.")}
+
+$_("Привет! Пожалуйста, пройдите по ссылке ниже чтобы активировать ваш аккаунт в образовательной платформе {platform_name}.").format(platform_name=platform-name)}
 
 % if is_secure:
 https://${ site }/activate/${ key }
@@ -10,15 +9,14 @@ https://${ site }/activate/${ key }
 http://${ site }/activate/${ key }
 % endif
 
-${_("Enjoy learning with {platform_name}.").format(platform_name=platform_name)}
+${_("Желаем успехов и приятного обучения.")}
 
-${_("The {platform_name} Team").format(platform_name=platform_name)}
+${_("С уважением, команда {platform_name}").format(platform_name=platform_name)}
 
-${_("If you need help, please use our web form at {support_url} or email {support_email}.").format(
-  support_url=support_url, support_email=support_email
+${_("Если вам понадобится помощь, напишите нам на {support_email}.").format(
+  support_email=support_email
 )}
 
-${_("This email message was automatically sent by {lms_url} because someone attempted to create an "
-"account on {platform_name} using this email address.").format(
+${_("Это сообщение было сгенерировано автоматически {lms_url} так как кто-то попытался зарегистрироваться в {platform_name} используя ваш email").format(
   lms_url=lms_url, platform_name=platform_name
 )}
