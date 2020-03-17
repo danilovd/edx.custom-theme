@@ -24,6 +24,7 @@ $action-primary-fg: $stanford-white;
 $action-primary-bg: $cardinal-red;
 $m-blue-d3: $cardinal-red;
 $gray-l5: $stanford-white;
+$blue: darken($light-red-2, 10%);
 
 // base - utilities
 @import 'base/reset';
