@@ -24,8 +24,11 @@ $action-primary-fg: $stanford-white;
 $action-primary-bg: $cardinal-red;
 $m-blue-d3: $cardinal-red;
 $gray-l5: $stanford-white;
+
+// register screen, removing blue colors
 $blue: $dark-red;
 $link-hover: $dark-red;
+$uxpl-blue-hover-active: $dark-red;
 
 // base - utilities
 @import 'base/reset';
