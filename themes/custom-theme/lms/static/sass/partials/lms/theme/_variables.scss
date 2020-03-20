@@ -1,0 +1,33 @@
+
+.btn-primary {
+  background-color: $stanford-white;
+  border-color: $light-red;
+  color: $light-red;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($light-red, 10%) !important;
+    border-color: darken($light-red, 10%) !important;
+    color: $stanford-white;
+  }
+}
+
+.btn-secondary {
+  background-color: $light-red;
+  border-color: $light-red;
+  color: $stanford-white;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($light-red, 10%) !important;
+    border-color: darken($light-red, 10%) !important;
+  }
+}
+
+.text-dark {
+  color: $dark-red;
+}
+
+.input {
+  font-weight: 300 !important;
+}
