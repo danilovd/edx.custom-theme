@@ -201,9 +201,17 @@ header {
 
   // FOOTER SETTINGS
 
+input[type=submit] {
+  all: initial;
+  * {
+    all: unset;
+  }
+}
+
 .wrapper-footer {
   background-color: $light-red;
 }
+
 
 #fd-footer {
 
