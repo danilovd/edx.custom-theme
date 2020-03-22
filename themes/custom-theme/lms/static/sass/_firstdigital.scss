@@ -61,39 +61,39 @@ header {
     }
   }
 }
-
-.fd-button-primary-lg {
-  @extend .btn-primary;
-  @extend .btn-lg;
-  background-color: $stanford-white;
-  border-color: $light-red-2;
-  color: $light-red-2;
-  padding: 15px 24px;
-  font-family: $button-font;
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: $light-red-2 !important;
-    border-color: $light-red-2 !important;
-    color: $stanford-white;
-  }
-}
-
-.fd-button-lg {
-  @extend .btn-secondary;
-  @extend .btn-lg;
-  background-color: $light-red-2;
-  border-color: $light-red-2;
-  padding: 15px 24px;
-  font-family: $button-font;
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: darken($light-red-2, 10%) !important;
-    border-color: darken($light-red-2, 10%) !important;
-    color: $stanford-white;
-  }
-}
+//
+//.fd-button-primary-lg {
+//  @extend .btn-primary;
+//  @extend .btn-lg;
+//  background-color: $stanford-white;
+//  border-color: $light-red-2;
+//  color: $light-red-2;
+//  padding: 15px 24px;
+//  font-family: $button-font;
+//  &:active,
+//  &:focus,
+//  &:hover {
+//    background-color: $light-red-2 !important;
+//    border-color: $light-red-2 !important;
+//    color: $stanford-white;
+//  }
+//}
+//
+//.fd-button-lg {
+//  @extend .btn-secondary;
+//  @extend .btn-lg;
+//  background-color: $light-red-2;
+//  border-color: $light-red-2;
+//  padding: 15px 24px;
+//  font-family: $button-font;
+//  &:active,
+//  &:focus,
+//  &:hover {
+//    background-color: darken($light-red-2, 10%) !important;
+//    border-color: darken($light-red-2, 10%) !important;
+//    color: $stanford-white;
+//  }
+//}
 
 // BENEFITS
 

@@ -4,10 +4,12 @@
 @import "myvariables";
 
 .btn {
+  @extend .btn;
   font-family: $secondary-font;
 }
 
 .btn-primary {
+  @extend .btn-primary;
   background-color: $light-red;
   border-color: $light-red;
   color: $stanford-white;
@@ -21,6 +23,7 @@
 }
 
 .btn-outline-primary {
+  @extend .btn-outline-primary;
   background-color: $stanford-white;
   border-color: $light-red;
   color: $light-red;
