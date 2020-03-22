@@ -111,6 +111,19 @@ header {
     width: auto;
     height: auto;
   }
+
+  .align-items-center {
+    align-items: center;
+  }
+
+  .justify-content-end {
+    justify-content: flex-end;
+  }
+
+  .d-flex {
+    display: flex;
+  }
+
   .featurette .highlights {
     color: $dark-red;
     font-weight: bold;
