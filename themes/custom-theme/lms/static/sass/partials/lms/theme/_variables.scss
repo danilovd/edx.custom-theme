@@ -2,6 +2,11 @@
 
 
 @import "../../../_palette.scss";
+@import "../../../_myvariables.scss";
+
+.btn {
+  font-family: $secondary-font;
+}
 
 .btn-primary {
   background-color: $stanford-white;
@@ -20,12 +25,19 @@
   background-color: $light-red;
   border-color: $light-red;
   color: $stanford-white;
+
   &:active,
   &:focus,
   &:hover {
     background-color: darken($light-red, 10%) !important;
     border-color: darken($light-red, 10%) !important;
   }
+}
+
+.btn-outline-primary {
+  background-color: $stanford-white;
+  color: $light-red;
+  border-color: $light-red;
 }
 
 .text-dark {
