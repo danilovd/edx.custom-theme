@@ -1,8 +1,7 @@
 // Default bootstrap theming
 
-
-@import "../../../_palette.scss";
-@import "../../../_myvariables.scss";
+@import "palette";
+@import "myvariables";
 
 .btn {
   font-family: $secondary-font;
