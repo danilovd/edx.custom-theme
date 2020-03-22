@@ -99,6 +99,8 @@ header {
 // BENEFITS
 
 .marketing {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
   background: $stanford-white;
@@ -200,13 +202,6 @@ header {
 //}
 
   // FOOTER SETTINGS
-
-input[type=submit] {
-  all: initial;
-  * {
-    all: unset;
-  }
-}
 
 .wrapper-footer {
   background-color: $light-red;
