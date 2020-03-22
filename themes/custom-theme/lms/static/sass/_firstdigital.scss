@@ -104,6 +104,11 @@ header {
   background: $stanford-white;
   box-shadow: 0 2px 25px rgba(1,0,60,.35);
 
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .featurette-image {
     display:block;
     max-width: 250px;
