@@ -17,38 +17,22 @@ header {
   #fd-header-logo {
     max-height: 3rem;
   }
-  nav {
-    background-color: $stanford-white;
 
-    #non-auth-header {
-      width: 100%;
-      padding-left: 2rem;
-      padding-right: 2rem;
+  #non-auth-header {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
 
-      .header-buttons {
-        float: right;
-      }
-    }
-
-    #fd-login {
+    .header-buttons {
       margin-left: auto;
-      font-family: $secondary-font;
-    }
-    #fd-register {
-      margin-left: 0.1rem;
-      font-family: $secondary-font;
     }
   }
 
-}
+  #fd-login #fd-register {
+    font-family: $secondary-font;
+  }
 
-//.container {
-//  width: 100%;
-//  padding-right: 15px;
-//  padding-left: 15px;
-//  margin-right: auto;
-//  margin-left: auto;
-//}
+}
 
 .partnership {
 
