@@ -10,20 +10,16 @@ from six import text_type
 %>
 
 
-<nav class="navbar navbar-expand-md">
+<div id="non-auth-header">
+    <a class="nav-link" href="#">
+        <img id="fd-header-logo" src="${static.url('images/logo.png')}">
+    </a>
 
-    <div id="non-auth-header">
-        <a class="nav-link" href="#">
-            <img id="fd-header-logo" src="${static.url('images/logo.png')}">
-        </a>
-
-        % if request.path == '/':
-        <div class="header-buttons">
-            <a id="fd-login" class="btn btn-primary" href="/login">${_("Sign in")}</a>
-            <a id="fd-register" class="btn btn-primary" href="/register">${_("Register")}</a>
-        </div>
-        % endif
-
+    % if request.path == '/':
+    <div class="header-buttons">
+        <a id="fd-login" class="btn btn-primary" href="/login">${_("Sign in")}</a>
+        <a id="fd-register" class="btn btn-primary" href="/register">${_("Register")}</a>
     </div>
+    % endif
 
-</nav>
+</div>

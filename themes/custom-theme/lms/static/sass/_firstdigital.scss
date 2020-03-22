@@ -24,6 +24,10 @@ header {
       width: 100%;
       padding-left: 2rem;
       padding-right: 2rem;
+
+      .header-buttons {
+        float: right;
+      }
     }
 
     #fd-login {
