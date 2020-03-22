@@ -22,21 +22,6 @@
   }
 }
 
-.fd-btn-outline-primary {
-  @extend .btn-primary;
-  background-color: $stanford-white;
-  border-color: $light-red;
-  color: $light-red;
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: darken($light-red, 10%) !important;
-    border-color: darken($light-red, 10%) !important;
-    color: $stanford-white;
-  }
-}
-
-
 .text-dark {
   color: $dark-red;
 }
