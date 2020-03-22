@@ -8,6 +8,19 @@
 }
 
 .btn-primary {
+  background-color: $light-red;
+  border-color: $light-red;
+  color: $stanford-white;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($light-red, 10%) !important;
+    border-color: darken($light-red, 10%) !important;
+    color: $stanford-white;
+  }
+}
+
+.btn-outline-primary {
   background-color: $stanford-white;
   border-color: $light-red;
   color: $light-red;
@@ -20,18 +33,6 @@
   }
 }
 
-.btn-secondary {
-  background-color: $light-red;
-  border-color: $light-red;
-  color: $stanford-white;
-
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: darken($light-red, 10%) !important;
-    border-color: darken($light-red, 10%) !important;
-  }
-}
 
 .text-dark {
   color: $dark-red;
@@ -41,5 +42,3 @@
   font-weight: 300 !important;
 }
 
-
-@import 'edx-bootstrap/sass/open-edx/theme';
