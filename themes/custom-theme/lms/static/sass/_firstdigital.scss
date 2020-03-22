@@ -49,6 +49,7 @@ header {
 
 .jumbotron {
 
+  border-radius: 0;
   height: 600px;
 
   h1, h2, h3, h4, h5, p {
@@ -235,3 +236,16 @@ header {
   }
 }
 
+
+
+// COURSE PAGE
+
+.social-sharing {
+  display: none;
+}
+
+.class-sidebar {
+  @media (max-width: $breakpoint-tablet) {
+    width: auto;
+  }
+}
