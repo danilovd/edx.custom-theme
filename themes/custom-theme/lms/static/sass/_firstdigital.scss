@@ -245,7 +245,8 @@ header {
 }
 
 .class-sidebar {
-  @media (max-width: $breakpoint-tablet) {
-    width: auto;
+  width: auto;
+  @media (min-width: $breakpoint-tablet) {
+    width: 30%;
   }
 }
