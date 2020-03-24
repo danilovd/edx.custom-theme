@@ -34,6 +34,8 @@ header {
 
 .partnership {
 
+  position: absolute;
+  z-index: 10;
   margin-left: auto;
   margin-right: auto;
   background: $stanford-white;
@@ -211,6 +213,7 @@ header {
 .wrapper-footer {
   background-color: $light-red;
   margin-top: 3rem;
+  position: absolute;
 }
 
 
