@@ -36,6 +36,12 @@ header {
 
   margin-bottom: 3rem;
 
+  @media (min-width: $breakpoint-tablet) {
+    margin-botton: -100px;
+    max-width: 1200px;
+    box-shadow: 0 2px 25px rgba(1,0,60,.35);
+  }
+
   h2 {
     margin-bottom: 2rem;
   }
@@ -97,7 +103,12 @@ header {
 //  }
 //}
 
-.main-panel {
+// BENEFITS
+
+.marketing {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: $stanford-white;
   margin-left: auto;
   margin-right: auto;
 
@@ -106,16 +117,6 @@ header {
     max-width: 1200px;
     box-shadow: 0 2px 25px rgba(1,0,60,.35);
   }
-
-}
-
-// BENEFITS
-
-.marketing {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  background: $stanford-white;
-
 
   .featurette-image {
     display:block;
