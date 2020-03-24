@@ -97,20 +97,25 @@ header {
 //  }
 //}
 
+.main-panel {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin-top: -100px;
+    max-width: 1200px;
+    box-shadow: 0 2px 25px rgba(1,0,60,.35);
+  }
+
+}
+
 // BENEFITS
 
 .marketing {
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
   background: $stanford-white;
 
-  @media (min-width: $breakpoint-tablet) {
-    margin-top: -100px;
-    max-width: 1440px;
-    box-shadow: 0 2px 25px rgba(1,0,60,.35);
-  }
 
   .featurette-image {
     display:block;

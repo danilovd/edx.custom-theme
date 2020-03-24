@@ -28,9 +28,11 @@ from openedx.core.djangolib.markup import HTML, Text
             </div>
         </div>
 
-        <%include file="benefits.html"/>
-        <%include file="featured-courses.html" />
-        <%include file="partnership.html" />
+        <div class="main-panel">
+            <%include file="benefits.html"/>
+            <%include file="featured-courses.html" />
+            <%include file="partnership.html" />
+        </div>
 
     </section>
 </main>
