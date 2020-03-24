@@ -34,16 +34,14 @@ header {
 
 .partnership {
 
-  margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  background: $stanford-white;
 
   @media (min-width: $breakpoint-tablet) {
-    margin-botton: -100px;
+    margin-bottom: -100px;
     max-width: 1200px;
     box-shadow: 0 2px 25px rgba(1,0,60,.35);
-  }
-
-  h2 {
-    margin-bottom: 2rem;
   }
 
   .partner-logo {
@@ -212,6 +210,7 @@ header {
 
 .wrapper-footer {
   background-color: $light-red;
+  margin-top: 3rem;
 }
 
 
