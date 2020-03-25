@@ -34,11 +34,11 @@ header {
 
 .partnership {
 
-  position: absolute;
-  z-index: 10;
   margin-left: auto;
   margin-right: auto;
-  background: $stanford-white;
+  background-color: $stanford-white;
+  position:relative;
+  z-index: 100;
 
   @media (min-width: $breakpoint-tablet) {
     margin-bottom: -100px;
@@ -213,7 +213,8 @@ header {
 .wrapper-footer {
   background-color: $light-red;
   margin-top: 3rem;
-  position: absolute;
+  width: 100%;
+  padding-top: 100px;
 }
 
 
