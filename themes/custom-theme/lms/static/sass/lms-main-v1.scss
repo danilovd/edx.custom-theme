@@ -50,11 +50,6 @@ $uxpl-blue-hover-active: $dark-red;
 
 @import 'build-lms-v1'; // shared app style assets/rendering
 
-$btn-brand-border-color:                  $sandstone;
-$btn-brand-background:                    $sandstone;
-$btn-brand-color:                         $stanford-black;
-
-
 // FIRST DIGITAL - CUSTOM THEMING
 @import "myvariables";
 @import 'firstdigital';
