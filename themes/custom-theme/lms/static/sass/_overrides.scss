@@ -8,15 +8,15 @@
 }
 
 .btn-primary {
-  background-color: $light-red;
-  border-color: $light-red;
-  color: $stanford-white;
+  background-color: $primary;
+  border-color: $primary;
+  color: $secondary;
   &:active,
   &:focus,
   &:hover {
-    background-color: darken($light-red, 10%) !important;
-    border-color: darken($light-red, 10%) !important;
-    color: $stanford-white;
+    background-color: darken($primary, 10%) !important;
+    border-color: darken($primary, 10%) !important;
+    color: $secondary;
   }
 }
 

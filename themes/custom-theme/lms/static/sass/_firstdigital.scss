@@ -69,39 +69,6 @@ header {
     }
   }
 }
-//
-//.fd-button-primary-lg {
-//  @extend .btn-primary;
-//  @extend .btn-lg;
-//  background-color: $stanford-white;
-//  border-color: $light-red-2;
-//  color: $light-red-2;
-//  padding: 15px 24px;
-//  font-family: $button-font;
-//  &:active,
-//  &:focus,
-//  &:hover {
-//    background-color: $light-red-2 !important;
-//    border-color: $light-red-2 !important;
-//    color: $stanford-white;
-//  }
-//}
-//
-//.fd-button-lg {
-//  @extend .btn-secondary;
-//  @extend .btn-lg;
-//  background-color: $light-red-2;
-//  border-color: $light-red-2;
-//  padding: 15px 24px;
-//  font-family: $button-font;
-//  &:active,
-//  &:focus,
-//  &:hover {
-//    background-color: darken($light-red-2, 10%) !important;
-//    border-color: darken($light-red-2, 10%) !important;
-//    color: $stanford-white;
-//  }
-//}
 
 // BENEFITS
 
@@ -194,29 +161,10 @@ header {
   }
 }
 
-
-//
-//.courses-container .courses .course .course-info {
-//  font-family: $primary-font;
-//
-//  h2 {
-//    color: $stanford-black;
-//  }
-//}
-//
-//
-//.course-code .course-organization .course-date {
-//  color: $gray-700;
-//}
-
-//.learn-more {
-//  @extend .btn-primary;
-//}
-
   // FOOTER SETTINGS
 
 .wrapper-footer {
-  background-color: $light-red;
+  background-color: $uchicago-red;
   margin-top: 3rem;
   width: 100%;
   padding-top: 10rem;
