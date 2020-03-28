@@ -1,11 +1,12 @@
-
 // -----------------------------
 // LMS main styles for Bootstrap
 // -----------------------------
 
+// Set the relative path to the static root
+$static-path: '../..';
 
 // Base build
-//@import 'build';
+@import 'build';
 
 // Elements
 @import 'header';
