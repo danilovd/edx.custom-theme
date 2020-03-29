@@ -2,6 +2,8 @@
 // LMS main styles for Bootstrap
 // -----------------------------
 
+@import "../lms-main-v1";
+
 // Set the relative path to the static root
 $static-path: '../..';
 
@@ -41,4 +43,3 @@ $static-path: '../..';
 @import 'experiments';
 
 
-@import "../lms-main-v1";
