@@ -26,21 +26,24 @@ header {
 
     .header-buttons {
       margin-left: auto;
+      margin-right: 0;
     }
   }
-
-  #fd-login #fd-register {
-    font-family: $secondary-font;
-  }
-
 }
 
 .partnership {
 
-  margin-bottom: 3rem;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $stanford-white;
+  position:relative;
+  z-index: 100;
 
-  h2 {
-    margin-bottom: 2rem;
+  @media (min-width: 1200px) {
+    margin-bottom: -100px;
+    max-width: 1200px;
+    box-shadow: 0 2px 25px rgba(1,0,60,.35);
   }
 
   .partner-logo {
@@ -51,6 +54,10 @@ header {
 }
 
 .jumbotron {
+
+  border-radius: 0;
+  height: 600px;
+
   h1, h2, h3, h4, h5, p {
     color: $gray-400;
   }
@@ -62,45 +69,21 @@ header {
     }
   }
 }
-//
-//.fd-button-primary-lg {
-//  @extend .btn-primary;
-//  @extend .btn-lg;
-//  background-color: $stanford-white;
-//  border-color: $light-red-2;
-//  color: $light-red-2;
-//  padding: 15px 24px;
-//  font-family: $button-font;
-//  &:active,
-//  &:focus,
-//  &:hover {
-//    background-color: $light-red-2 !important;
-//    border-color: $light-red-2 !important;
-//    color: $stanford-white;
-//  }
-//}
-//
-//.fd-button-lg {
-//  @extend .btn-secondary;
-//  @extend .btn-lg;
-//  background-color: $light-red-2;
-//  border-color: $light-red-2;
-//  padding: 15px 24px;
-//  font-family: $button-font;
-//  &:active,
-//  &:focus,
-//  &:hover {
-//    background-color: darken($light-red-2, 10%) !important;
-//    border-color: darken($light-red-2, 10%) !important;
-//    color: $stanford-white;
-//  }
-//}
 
 // BENEFITS
 
 .marketing {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  background: $stanford-white;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 1200px) {
+    margin-top: -100px;
+    max-width: 1200px;
+    box-shadow: 0 2px 25px rgba(1,0,60,.35);
+  }
 
   .featurette-image {
     display:block;
@@ -109,6 +92,7 @@ header {
     width: auto;
     height: auto;
   }
+
   .featurette .highlights {
     color: $dark-red;
     font-weight: bold;
@@ -131,6 +115,15 @@ header {
 }
 
 // FACULTIES, COURSES
+
+#featured-courses {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.courses-listing-item {
+  max-width: 20rem;
+}
 
 .courses-container  {
 
@@ -172,30 +165,15 @@ header {
   }
 }
 
-
-//
-//.courses-container .courses .course .course-info {
-//  font-family: $primary-font;
-//
-//  h2 {
-//    color: $stanford-black;
-//  }
-//}
-//
-//
-//.course-code .course-organization .course-date {
-//  color: $gray-700;
-//}
-
-//.learn-more {
-//  @extend .btn-primary;
-//}
-
   // FOOTER SETTINGS
 
 .wrapper-footer {
-  background-color: $light-red;
+  background-color: $uchicago-red;
+  margin-top: 3rem;
+  width: 100%;
+  padding-top: 10rem;
 }
+
 
 #fd-footer {
 
@@ -224,3 +202,17 @@ header {
   }
 }
 
+
+
+// COURSE PAGE
+
+.social-sharing {
+  display: none;
+}
+
+.class-sidebar {
+  width: auto;
+  @media (min-width: $breakpoint-tablet) {
+    width: 30%;
+  }
+}

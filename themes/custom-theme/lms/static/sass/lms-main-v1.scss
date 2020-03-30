@@ -18,12 +18,18 @@ $font-family-sans-serif: Roboto Slab, serif;
 $lighter-base-font-color: $stanford-black;
 $course-profile-bg: none;
 $homepage-bg-image: none;
-$button-color: $light-red;
+$button-color: $uchicago-red;
 $course-header-bg: none;
 $action-primary-fg: $stanford-white;
 $action-primary-bg: $cardinal-red;
 $m-blue-d3: $cardinal-red;
+
 $gray-l5: $stanford-white;
+
+// .btn-brand
+$btn-brand-border-color: $uchicago-red;
+$btn-brand-background: $uchicago-red;
+$btn-brand-color: $stanford-white;
 
 // register screen, removing blue colors
 $blue: $dark-red;
@@ -39,14 +45,11 @@ $uxpl-blue-hover-active: $dark-red;
   border-radius: $pixel;
 }
 
-// This comment is used by preprocess_assets.py to include resources from a
-// theme, for old-style deprecated theming.
-//<THEME-OVERRIDE>
-
 @import 'build-lms-v1'; // shared app style assets/rendering
-
 
 // FIRST DIGITAL - CUSTOM THEMING
 @import "myvariables";
 @import 'firstdigital';
 @import "overrides";
+
+@import 'bootstrap/scss/bootstrap';
