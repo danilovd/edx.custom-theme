@@ -1,35 +1,5 @@
 @import "palette";
-@import "_myvariables.scss";
-
-$breakpoint-tablet: 768px;
-
-h1,h2,h3,h4,h5,h6 {
-  color: $gray-800;
-  font-family: Roboto Slab, serif;
-}
-
-.content-wrapper {
-  max-width: unset;
-  padding: 0;
-}
-
-header {
-
-  #fd-header-logo {
-    max-height: 3rem;
-  }
-
-  #non-auth-header {
-    width: 100%;
-    padding: 2rem;
-    display: flex;
-
-    .header-buttons {
-      margin-left: auto;
-      margin-right: 0;
-    }
-  }
-}
+@import "myvariables";
 
 .partnership {
 
@@ -162,57 +132,5 @@ header {
       border: none;
       box-shadow: none;
     }
-  }
-}
-
-  // FOOTER SETTINGS
-
-.wrapper-footer {
-  background-color: $uchicago-red;
-  margin-top: 3rem;
-  width: 100%;
-  padding-top: 10rem;
-}
-
-
-#fd-footer {
-
-  padding-left: 5rem;
-  padding-right: 5rem;
-
-  .fd-logo {
-    display: contents;
-
-    img {
-      max-height: 60px;
-    }
-  }
-
-  .social-logo {
-    max-height: 1.5rem;
-    margin: 0.5rem;
-  }
-
-  .footer-link {
-    padding: 0.5rem;
-  }
-
-  .copyright {
-    margin-top: 2rem;
-  }
-}
-
-
-
-// COURSE PAGE
-
-.social-sharing {
-  display: none;
-}
-
-.class-sidebar {
-  width: auto;
-  @media (min-width: $breakpoint-tablet) {
-    width: 30%;
   }
 }

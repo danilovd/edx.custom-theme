@@ -2,7 +2,9 @@
 // LMS main styles for Bootstrap
 // -----------------------------
 
-@import "../lms-main-v1";
+@import "../firstdigital_common";
+@import "../firstdigital_header";
+@import "../firstdigital_footer";
 
 // Set the relative path to the static root
 $static-path: '../..';

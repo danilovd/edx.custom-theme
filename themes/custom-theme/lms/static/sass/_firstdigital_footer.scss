@@ -1,0 +1,36 @@
+@import "palette";
+
+.wrapper-footer {
+  background-color: $uchicago-red;
+  margin-top: 3rem;
+  width: 100%;
+  padding-top: 10rem;
+}
+
+
+#fd-footer {
+
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  .fd-logo {
+    display: contents;
+
+    img {
+      max-height: 60px;
+    }
+  }
+
+  .social-logo {
+    max-height: 1.5rem;
+    margin: 0.5rem;
+  }
+
+  .footer-link {
+    padding: 0.5rem;
+  }
+
+  .copyright {
+    margin-top: 2rem;
+  }
+}
