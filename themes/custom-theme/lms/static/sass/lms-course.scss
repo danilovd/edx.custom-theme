@@ -1,0 +1,5 @@
+@import "firstdigital_common";
+
+@import 'bourbon/bourbon';
+@import 'vendor/bi-app/bi-app-ltr'; // set the layout for left to right languages
+@import 'build-course'; // shared app style assets/rendering
