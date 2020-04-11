@@ -12,8 +12,8 @@
   &:active,
   &:focus,
   &:hover {
-    background-color: darken($primary, 10%) !important;
-    border-color: darken($primary, 10%) !important;
+    background-color: $stanford-light-red !important;
+    border-color: $stanford-light-red !important;
     color: $secondary;
   }
 }
