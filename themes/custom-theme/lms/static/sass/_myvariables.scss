@@ -22,9 +22,9 @@ $primary: $cardinal-red !default;
 $secondary: $stanford-white !default;
 $success: $dark-red !default;
 
-$primary-font: Source Sans Pro, serif;
-$secondary-font: Source Serif Pro, serif;
-$button-font: Lato, serif;
+$primary-font: 'Source Sans Pro', sans-serif;
+$secondary-font: 'Source Serif Pro', serif;
+$button-font: 'Lato', sans-serif;
 
 // open edx variables
 
@@ -52,8 +52,8 @@ $shadow-l1: rgba(0, 0, 0, 0.25);
 $baseline: 20px;
 $light-gray: $gray-500;
 $link-color: $dark-red;
-$serif: Source Sans Pro, serif;
-$font-family-sans-serif: Source Serif Pro, serif;
+$serif: $primary-font;
+$font-family-sans-serif: $secondary-font;
 $lighter-base-font-color: $stanford-black;
 $course-profile-bg: none;
 $homepage-bg-image: none;
