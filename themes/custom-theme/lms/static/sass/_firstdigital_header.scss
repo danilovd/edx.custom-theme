@@ -21,8 +21,12 @@ header {
   }
 }
 
-.header-global .navigation-container {
+.header-global {
   height: unset;
+  border-bottom: none;
+}
+
+.navigation-container {
   border-bottom: none;
 }
 
