@@ -16,17 +16,19 @@ from openedx.core.djangolib.markup import HTML, Text
 })(window,document,'script','dataLayer','GTM-N5J7TBZ');</script>
 </%block>
 
+<%block name="marketing_hero">
+    <div class="jumbotron" style="background-image: url(&quot;${static.url('images/cs50.cover_2_shaded.png')}&quot;); background-size: cover">
+        <div class="container text-center">
+            <h1 class="display-4">Курсы лучших университетов мира</h1>
+            <h1 class="display-4">на русском языке</h1>
+            <h2>// Онлайн-институт цифровых навыков</h2>
+            <p><a class="btn btn-primary btn-lg" href="/register" role="button">Присоединится бесплатно</a></p>
+        </div>
+    </div>
+</%block>
+
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="home">
-
-        <div class="jumbotron" style="background-image: url(&quot;${static.url('images/cs50.cover_2_shaded.png')}&quot;); background-size: cover">
-            <div class="container text-center">
-                <h1 class="display-4">Курсы лучших университетов мира</h1>
-                <h1 class="display-4">на русском языке</h1>
-                <h2>// Онлайн-институт цифровых навыков</h2>
-                <p><a class="btn btn-primary btn-lg" href="/register" role="button">Присоединится бесплатно</a></p>
-            </div>
-        </div>
 
         <%include file="benefits.html"/>
         <%include file="featured-courses.html" />
