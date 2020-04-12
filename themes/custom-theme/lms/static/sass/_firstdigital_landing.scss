@@ -17,10 +17,6 @@
   }
 }
 
-.content-wrapper {
-
-}
-
 .jumbotron {
 
   border-radius: 0;
@@ -76,6 +72,12 @@
       height: 100%;
       margin: 0;
     }
+  }
+
+  .video-embed-field-responsive-video:after {
+    content: '';
+    display: block;
+    padding-bottom: 56.25%;
   }
 }
 
