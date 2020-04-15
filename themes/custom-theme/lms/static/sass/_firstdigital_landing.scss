@@ -114,6 +114,7 @@
     .course {
       text-decoration: none;
       box-shadow: 1px 4px 7px rgba(46,45,41,0.35);
+      -webkit-box-shadow: 1px 4px 7px rgba(46,45,41,0.35);
       border: none;
       flex-direction: column;
       transition-duration: 0.15s;
@@ -128,6 +129,14 @@
         }
       }
     }
+
+    .course:hover {
+      -webkit-transform: scale3d(1.05,1.05,1);
+      transform: scale3d(1.05,1.05,1);
+      text-decoration: none;
+      outline: 0;
+    }
+
   }
 }
 
