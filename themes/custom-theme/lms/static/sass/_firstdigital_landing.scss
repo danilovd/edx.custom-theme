@@ -115,11 +115,14 @@
       text-decoration: none;
       box-shadow: 1px 4px 7px rgba(46,45,41,0.35);
       -webkit-box-shadow: 1px 4px 7px rgba(46,45,41,0.35);
-      border: none;
       flex-direction: column;
       transition-duration: 0.15s;
       transition-property: transform,-webkit-transform;
       transition-timing-function: ease-in-out;
+
+      img {
+        width: 100%;
+      }
 
       .course-info {
         height: auto;
