@@ -56,29 +56,15 @@
     font-weight: bold;
   }
 
-
-
   .video-embed-field-responsive-video {
 
-    position: relative;
-
-    iframe {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-    }
+     width: 100%;
+     iframe {
+       margin-left: auto;
+       margin-right: auto;
+     }
   }
 
-  .video-embed-field-responsive-video:after {
-    content: '';
-    display: block;
-    padding-bottom: 56.25%;
-  }
 }
 
 .section-header {
