@@ -27,19 +27,6 @@ $info: $sky;
 $warning: $sun;
 $danger: $bright-red;
 
-$theme-colors: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
-$theme-colors: map-merge(
-    (
-          "primary":                $primary,
-          "secondary":              $secondary,
-          "success":                $success,
-          "info":                   $info,
-          "warning":                $warning,
-          "danger":                 $danger
-    ), $theme-colors
-);
-
 $primary-font: 'Source Sans Pro', sans-serif;
 $secondary-font: 'Source Sans Pro', sans-serif;
 $button-font: 'Noto Sans', sans-serif;;
