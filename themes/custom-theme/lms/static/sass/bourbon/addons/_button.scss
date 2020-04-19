@@ -1,3 +1,6 @@
+@import "bootstrap/scss/variables";
+@import "../../myvariables";
+@import "../../overrides";
 @import 'bootstrap/scss/buttons';
 
 @mixin button ($style: simple, $base-color: #4294f0, $text-size: inherit, $padding: 7px 18px) {

@@ -4,25 +4,3 @@
 .btn {
   font-family: $button-font;
 }
-
-.btn-primary {
-  background-color: $primary;
-  border-color: $primary;
-  color: $secondary;
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: $stanford-light-red !important;
-    border-color: $stanford-light-red !important;
-    color: $secondary;
-  }
-}
-
-.text-dark {
-  color: $dark-red;
-}
-
-.input {
-  font-weight: 300 !important;
-}
-
