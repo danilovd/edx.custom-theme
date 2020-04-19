@@ -18,8 +18,31 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
+
+
 $primary: $bright-red !default;
 $secondary: $stanford-white !default;
+$success: $grass !default;
+$info: $sky;
+$warning: $sun;
+$danger: $bright-red;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+    (
+          "primary":                $primary,
+          "secondary":              $secondary,
+          "success":                $success,
+          "info":                   $info,
+          "warning":                $warning,
+          "danger":                 $danger
+    ), $theme-colors
+);
+
+
+$primary: ;
+$secondary:
 $success: $cardinal-red !default;
 
 $primary-font: 'Source Sans Pro', sans-serif;
