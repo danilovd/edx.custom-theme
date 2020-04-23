@@ -1,7 +1,13 @@
 //@import 'bourbon/bourbon'; // lib - bourbon
 //@import 'vendor/bi-app/bi-app-ltr'; // set the layout for left to right languages
 
-//@import "myvariables";
+@import "myvariables";
+@import 'firstdigital_common';
+@import "firstdigital_header";
+@import "firstdigital_footer";
+@import "firstdigital_landing";
+@import "firstdigital_course";
+@import "overrides";
 
 // base - utilities
 //@import 'base/reset';
@@ -16,13 +22,7 @@
 @import 'build-lms-v1'; // shared app style assets/rendering
 
 // FIRST DIGITAL - CUSTOM THEMING
-@import "myvariables";
-@import 'firstdigital_common';
-@import "firstdigital_header";
-@import "firstdigital_footer";
-@import "firstdigital_landing";
-@import "firstdigital_course";
-@import "overrides";
+
 
 @import "bootstrap/lms-main";
 //@import 'bootstrap/scss/bootstrap';
