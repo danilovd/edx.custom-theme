@@ -116,7 +116,7 @@
   transform: scale3d(1.05,1.05,1);
 }
 
-.fd-benefit, benefit-card {
+.fd-benefit {
   padding: 2em;
   text-align: center;
   max-width: 20rem;
@@ -131,6 +131,12 @@
     font-size: 2em;
     color: $cardinal-red;
   }
+}
+
+.benefit-card {
+  @extend .fd-benefit;
+  display: block;
+  flex-direction: column;
 }
 
 .courses-container  {
