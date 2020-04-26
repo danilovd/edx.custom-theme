@@ -54,6 +54,10 @@
     height: auto;
   }
 
+  h2 {
+    font-weight: 900;
+  }
+
   .video-embed-field-responsive-video {
 
      display: none;
@@ -159,8 +163,9 @@
     font-weight: 900;
   }
 
-  &:hover {
+  &:hover, &:active {
     text-decoration: none;
+    outline: 0;
   }
 }
 
