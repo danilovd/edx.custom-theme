@@ -153,10 +153,14 @@
   text-decoration: none;
 
   h3 {
-    font: $stanford-black;
+    color: $stanford-black;
     margin-left: 1em;
     margin-right: 1em;
     font-weight: 900;
+  }
+
+  &:hover {
+    text-decoration: none;
   }
 }
 
