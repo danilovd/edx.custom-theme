@@ -144,6 +144,13 @@
 .fd-faculty-card {
   @extend .fd-card;
   padding: 1em;
+  text-decoration: none;
+
+  h3 {
+    font: $stanford-black;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 }
 
 .courses-container  {
