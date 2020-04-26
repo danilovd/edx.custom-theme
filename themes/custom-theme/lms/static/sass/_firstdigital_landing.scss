@@ -139,6 +139,11 @@
   flex-direction: column;
 }
 
+.fd-faculty-card {
+  @extend .fd-card;
+  padding: 1em;
+}
+
 .courses-container  {
 
   .courses {
