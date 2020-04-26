@@ -86,6 +86,12 @@
 
 // FACULTIES, COURSES
 
+#approach {
+  h2, h3 {
+    font-weight: 900;
+  }
+}
+
 #featured-courses {
   margin-bottom: 10rem;
 }
@@ -150,6 +156,7 @@
     font: $stanford-black;
     margin-left: 1em;
     margin-right: 1em;
+    font-weight: 900;
   }
 }
 
