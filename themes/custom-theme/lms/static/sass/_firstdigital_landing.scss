@@ -85,18 +85,21 @@
 
 #approach {
   h2, h3 {
-    font-weight: 900;
+    font-weight: bold;
   }
 }
 
-.faculties {
+#faculties {
   h2 {
     font-weight: bold;
   }
 }
 
 #featured-courses {
-  margin-bottom: 10rem;
+
+  h2 {
+    font-weight: bold;
+  }
 }
 
 .courses-listing {
