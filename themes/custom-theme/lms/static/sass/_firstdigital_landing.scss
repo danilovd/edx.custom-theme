@@ -199,23 +199,27 @@
         color: $stanford-black;
       }
 
+      p {
+        color: $stanford-black;
+      }
+
+      .course-duration, .course-complexity {
+        p {
+          margin: 0 0 0 10px;
+        }
+      }
+
       .course-duration {
         margin-right: auto;
         i {
           color: $cardinal-red;
-        }
-
-        p {
-          margin: 0 0 0 10px;
         }
       }
 
       .course-complexity {
         margin-left: auto;
 
-        p {
-          margin: 0 0 0 10px;
-        }
+
       }
 
       img {
