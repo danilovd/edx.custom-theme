@@ -1,6 +1,10 @@
 @import "palette";
 @import "myvariables";
 
+.section-header {
+  text-align: center;
+}
+
 .partnership {
 
   padding: 2rem;
@@ -55,7 +59,7 @@
   }
 
   h2 {
-    font-weight: 900;
+    font-weight: bold;
   }
 
   .video-embed-field-responsive-video {
@@ -177,7 +181,6 @@
 
     .fd-course {
       overflow: hidden;
-      height: 32em;
       .course-name {
         color: $stanford-black;
         font-weight: 700;
@@ -194,6 +197,12 @@
 
       .course-date {
         color: $stanford-black;
+      }
+
+      .course-duration {
+        i {
+          color: $cardinal-red;
+        }
       }
 
       img {
