@@ -200,14 +200,20 @@
       }
 
       .course-duration {
+        margin-right: auto;
         i {
           color: $cardinal-red;
+        }
+
+        p {
+          margin: 0 1em;
         }
       }
 
       img {
         width: 100%;
       }
+
 
       .course-info {
         height: auto;
