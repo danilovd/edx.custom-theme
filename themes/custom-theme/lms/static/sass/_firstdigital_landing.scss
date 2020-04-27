@@ -176,6 +176,7 @@
   .courses {
 
     .fd-course {
+      overflow: hidden;
       height: 32em;
       .course-name {
         color: $stanford-black;

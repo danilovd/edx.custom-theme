@@ -15,19 +15,22 @@ from six import text_type
     </header>
     <div class="course-info" aria-hidden="true">
       <h3 class="course-name">${course.display_name_with_default}</h3>
-      <p class="course-number">${course.display_number_with_default}</p>
-      <h4 class="course-organization">${course.display_org_with_default}</h4>
-      <%
-      if course.start is not None:
-          course_date_string = course.start.strftime('%Y-%m-%dT%H:%M:%S%z')
-      else:
-          course_date_string = ''
-      %>
-      % if course.advertised_start is not None:
-          <div class="course-date" aria-hidden="true">${_("Starts")}: ${course.advertised_start}</div>
-      % else:
-          <div class="course-date localized_datetime" aria-hidden="true" data-format="shortDate" data-datetime="${course_date_string}" data-string="${_("Starts: {date}")}"></div>
-    % endif
+      <p>Дэвид Малан, профессор Гарвардского университета</p>
+      <div class="d-flex justify-content-between">
+        <p>3 недели</p>
+        <div class="course-complexity">
+          <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="14" width="6" height="6" fill="#C00000"/>
+            <rect x="8" y="14" width="6" height="6" fill="#C4C4C4"/>
+            <rect x="16" y="14" width="6" height="6" fill="#C4C4C4"/>
+            <rect x="16" y="7" width="6" height="6" fill="#C4C4C4"/>
+            <rect x="16" width="6" height="6" fill="#C4C4C4"/>
+            <rect x="8" y="7" width="6" height="6" fill="#C4C4C4"/>
+          </svg>
+          <p class="course-complexity-title">Начальный</p>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="sr">
     <ul>
