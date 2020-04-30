@@ -24,8 +24,4 @@
 @import 'build-base-v1';
 @import 'build-lms-v1'; // shared app style assets/rendering
 
-// upgrade bootstrap 4.3.1: fix compilation error
-@mixin font-size($font-size...) {
-  font-size: $font-size;
-}
 @import 'bootstrap/scss/bootstrap';
