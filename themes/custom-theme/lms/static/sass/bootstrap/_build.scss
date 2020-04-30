@@ -5,8 +5,8 @@
 @import 'lms/theme/variables';
 
 // Bootstrap
-@import 'bootstrap/scss/mixins';
-@import 'bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/bootstrap';
 
 // LMS variables
 @import '../variables';
