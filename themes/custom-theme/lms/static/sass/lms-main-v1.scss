@@ -10,6 +10,11 @@
 @import "firstdigital_carousel";
 @import "overrides";
 
+// upgrade bootstrap 4.3.1: fix compilation error
+@mixin font-size($font-size) {
+  font-size: $font-size;
+}
+
 // base - utilities
 //@import 'base/reset';
 //@import 'base/variables-ltr';
