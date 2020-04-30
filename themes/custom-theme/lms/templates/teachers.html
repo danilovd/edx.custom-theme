@@ -3,15 +3,13 @@
 <%namespace name='static' file='/static_content.html'/>
 
 <div class="container text-center my-3">
-    <h2 class="font-weight-light">Bootstrap 4 - Multi Item Carousel</h2>
+    <h2>Наши преподаватели</h2>
     <div class="row mx-auto my-auto">
         <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
             <div class="carousel-inner w-100" role="listbox">
                 <div class="carousel-item">
                     <div class="col-md-4">
-                        <div class="card card-body">
-                            <img class="img-fluid" src="http://placehold.it/380?text=1">
-                        </div>
+                        <%include file="teacher_card.html" args="teacher_name='Роберт Седжвик' university_name='Принстонский университет'" />
                     </div>
                     <div class="col-md-4">
                         <div class="card card-body">
