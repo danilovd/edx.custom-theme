@@ -4,7 +4,7 @@
 <%page args="avatar,teacher_name,university_name" expression_filter="h"/>
 
 <div class="card teacher-card">
-    <div class="image card-img-top mx-auto rounded-circle img-fluid" style="background-image: url(&quot;${static.url(avatar)}&quot;); background-size: cover"alt="Teacher avatar">
+    <div class="avatar card-img-top mx-auto rounded-circle img-fluid" style="background-image: url(&quot;${static.url(avatar)}&quot;); background-size: cover"alt="Teacher avatar"></div>
     <div class="card-body">
         <h3 class="card-title text-center font-weight-bold">${teacher_name}</h3>
         <p class="card-text">${university_name}</p>
