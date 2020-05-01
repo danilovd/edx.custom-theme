@@ -265,7 +265,9 @@
   }
 }
 
-.teacher-card {
+#teachers {
+
+  .teacher-card {
 
     max-width: 200px;
     border: none;
@@ -276,4 +278,5 @@
       height: 120px;
       overflow: hidden;
     }
+  }
 }
