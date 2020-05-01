@@ -264,3 +264,15 @@
     }
   }
 }
+
+.teacher-card {
+
+    max-width: 120px;
+    border: none;
+
+    img {
+      width: 120px;
+      heigth: 120px;
+      overflow: hidden;
+    }
+}

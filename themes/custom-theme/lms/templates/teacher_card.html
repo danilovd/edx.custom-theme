@@ -3,8 +3,8 @@
 <%namespace name='static' file='/static_content.html'/>
 <%page args="avatar,teacher_name,university_name" expression_filter="h"/>
 
-<div class="card">
-    <img class="card-img-top" src="${static.url(avatar)}" alt="Teacher avatar">
+<div class="card teacher-card">
+    <img class="card-img-top mx-auto rounded-circle img-fluid" src="${static.url(avatar)}" alt="Teacher avatar">
     <div class="card-body">
         <h5 class="card-title text-center">${teacher_name}</h5>
         <p class="card-text">${university_name}</p>
