@@ -4,3 +4,8 @@
 .btn {
   font-family: $button-font;
 }
+
+.container, .container-fluid {
+  padding-left: 5em;
+  padding-right: 5em;
+}
