@@ -21,4 +21,16 @@
     width: 200px;
     margin-top: 2em;
   }
+
+  .fd-logo {
+     max-width: 300px;
+  }
+
+  .social-links {
+    i {
+      color: $stanford-white;
+      font-size: 3em;
+      font-weight: bold;
+    }
+  }
 }
