@@ -40,7 +40,24 @@
     }
 
     #sl-fb:hover {
-      color: $blue;
+      i {
+        color: $facebook-blue;
+      }
+    }
+    #sl-vk:hover {
+      i {
+        color: $vk-blue;
+      }
+    }
+    #sl-tg:hover {
+      i {
+        color: $tg-blue;
+      }
+    }
+    #sl-ig:hover {
+      i {
+        color: $ig-rose;
+      }
     }
   }
 }
