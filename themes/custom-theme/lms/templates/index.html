@@ -18,11 +18,11 @@ from openedx.core.djangolib.markup import HTML, Text
 
 <%block name="marketing_hero">
     <div class="jumbotron" style="background-image: url(&quot;${static.url('images/cs50.cover_2_shaded.png')}&quot;); background-size: cover">
-        <div class="container text-center">
-            <h1 class="display-4">Курсы лучших университетов мира</h1>
-            <h1 class="display-4">на русском языке</h1>
+        <div class="container text-left">
+            <h1 class="display-5 text-left font-weight-bold">Курсы лучших университетов мира</h1>
+            <h1 class="display-5 text-left font-weight-bold">на русском языке</h1>
             <h2>// Онлайн-институт цифровых навыков</h2>
-            <p><a id="join-button" class="btn btn-primary btn-lg mt-5" href="/register" role="button">Присоединится бесплатно</a></p>
+            <a id="join-button" class="btn btn-primary btn-lg mt-5" href="/courses" role="button">Найти курсы</a>
         </div>
     </div>
 </%block>

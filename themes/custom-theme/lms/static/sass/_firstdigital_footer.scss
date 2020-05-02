@@ -30,6 +30,10 @@
 
     a {
       margin-right: 1em;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     i {
