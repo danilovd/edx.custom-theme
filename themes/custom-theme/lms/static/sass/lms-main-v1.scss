@@ -10,7 +10,7 @@
 @import "firstdigital_landing";
 @import "firstdigital_course";
 @import "firstdigital_carousel";
-@import "overrides";
+
 
 // base - utilities
 //@import 'base/reset';
@@ -26,3 +26,5 @@
 
 //@import 'bootstrap/scss/bootstrap';
 @import 'bootstrap/lms-main';
+
+@import "overrides";
