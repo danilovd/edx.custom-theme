@@ -27,11 +27,20 @@
   }
 
   .social-links {
+
+    a {
+      margin-right: 1em;
+    }
+
     i {
       color: $stanford-white;
       font-size: 3em;
       font-weight: bold;
       text-decoration: none;
+    }
+
+    #sl-fb:hover {
+      color: $blue;
     }
   }
 }
