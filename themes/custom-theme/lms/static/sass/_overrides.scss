@@ -2,7 +2,8 @@
 @import "myvariables";
 
 .btn {
-  font-family: $button-font;
+  font-family: $primary-font;
+  font-weight: bold;
 }
 
 .container, .container-fluid {
