@@ -10,8 +10,18 @@
   padding-left: 1em;
   padding-right: 1em;
 
+  @media (min-width: $breakpoint-mobile) {
+    padding-left: 3em;
+    padding-left: 3em;
+  }
+
   @media (min-width: $breakpoint-tablet) {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
     padding-left: 30%;
-    padding-right: 30%;
+    padding-rigth: 30%;
   }
 }
