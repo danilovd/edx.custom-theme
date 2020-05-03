@@ -162,6 +162,8 @@
   @extend .fd-card;
   padding: 1em;
   text-decoration: none;
+  max-width: 300px;
+  margin: 10px 10px;
 
   h3 {
     color: $stanford-black;
@@ -170,16 +172,17 @@
     font-weight: 900;
   }
 
-  a:hover, a:active {
-    text-decoration: none;
-    outline: 0;
-  }
+}
+
+.fd-faculty-card a:hover {
+  text-decoration: none;
 }
 
 #featured-courses  {
 
     .fd-course {
       overflow: hidden;
+      min-height: 30em;
       .course-name {
         color: $stanford-black;
         font-weight: 700;
