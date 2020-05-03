@@ -7,6 +7,11 @@
 }
 
 .container, .container-fluid {
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
 }
