@@ -165,6 +165,8 @@
   svg {
     width: 100%;
   }
+  max-width: 300px;
+  margin: 10px 10px;
 
   h3 {
     color: $stanford-black;
@@ -183,6 +185,7 @@
 
     .fd-course {
       overflow: hidden;
+      min-height: 30em;
       .course-name {
         color: $stanford-black;
         font-weight: 700;
