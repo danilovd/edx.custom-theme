@@ -31,3 +31,134 @@
     padding-right: 20%;
   }
 }
+
+
+
+@mixin button ($style: simple, $base-color: #4294f0, $text-size: inherit, $padding: 7px 18px) {
+
+  @if type-of($style) == string and type-of($base-color) == color {
+    @include buttonstyle($style, $base-color, $text-size, $padding);
+  }
+
+  @if type-of($style) == string and type-of($base-color) == number {
+    $padding: $text-size;
+    $text-size: $base-color;
+    $base-color: #4294f0;
+
+    @if $padding == inherit {
+      $padding: 7px 18px;
+    }
+
+    @include buttonstyle($style, $base-color, $text-size, $padding);
+  }
+
+  @if type-of($style) == color and type-of($base-color) == color {
+    $base-color: $style;
+    $style: simple;
+    @include buttonstyle($style, $base-color, $text-size, $padding);
+  }
+
+  @if type-of($style) == color and type-of($base-color) == number {
+    $padding: $text-size;
+    $text-size: $base-color;
+    $base-color: $style;
+    $style: simple;
+
+    @if $padding == inherit {
+      $padding: 7px 18px;
+    }
+
+    @include buttonstyle($style, $base-color, $text-size, $padding);
+  }
+
+  @if type-of($style) == number {
+    $padding: $base-color;
+    $text-size: $style;
+    $base-color: #4294f0;
+    $style: simple;
+
+    @if $padding == #4294f0 {
+      $padding: 7px 18px;
+    }
+
+    @include buttonstyle($style, $base-color, $text-size, $padding);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+
+// Selector Style Button
+//************************************************************************//
+@mixin buttonstyle($type, $b-color, $t-size, $pad) {
+  // Grayscale button
+  @if $type == simple and $b-color == grayscale($b-color) {
+    @include simple($b-color, true, $t-size, $pad);
+  }
+
+  @if $type == shiny and $b-color == grayscale($b-color) {
+    @include shiny($b-color, true, $t-size, $pad);
+  }
+
+  @if $type == pill and $b-color == grayscale($b-color) {
+    @include pill($b-color, true, $t-size, $pad);
+  }
+
+  @if $type == flat and $b-color == grayscale($b-color) {
+    @include flat($b-color, true, $t-size, $pad);
+  }
+
+  // Colored button
+  @if $type == simple {
+    @include simple($b-color, false, $t-size, $pad);
+  }
+
+  @else if $type == shiny {
+    @include shiny($b-color, false, $t-size, $pad);
+  }
+
+  @else if $type == pill {
+    @include pill($b-color, false, $t-size, $pad);
+  }
+
+  @else if $type == flat {
+    @include flat($b-color, false, $t-size, $pad);
+  }
+}
+
+
+
+// Simple Button
+//************************************************************************//
+@mixin simple($base-color, $grayscale: false, $textsize: inherit, $padding: 7px 18px) {
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+
+// Shiny Button
+//************************************************************************//
+@mixin shiny($base-color, $grayscale: false, $textsize: inherit, $padding: 7px 18px) {
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+
+// Pill Button
+//************************************************************************//
+@mixin pill($base-color, $grayscale: false, $textsize: inherit, $padding: 7px 18px) {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+
+
+// Flat Button
+//************************************************************************//
+@mixin flat($base-color, $grayscale: false, $textsize: inherit, $padding: 7px 18px) {
+  @extend .btn;
+  @extend .btn-outline-primary;
+}
