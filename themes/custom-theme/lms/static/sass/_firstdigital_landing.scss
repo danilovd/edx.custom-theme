@@ -187,6 +187,7 @@ a.fd-faculty-card:hover {
     .fd-course {
       overflow: hidden;
       min-height: 30em;
+      width: 15em;
       .course-name {
         color: $stanford-black;
         font-weight: 700;
@@ -216,13 +217,13 @@ a.fd-faculty-card:hover {
       }
 
       .course-duration {
-        margin-right: auto;
         i {
           color: $cardinal-red;
         }
       }
 
-      .course-complexity {
+      .course-duration .course-complexity {
+        margin-right: auto;
         margin-left: auto;
       }
 
