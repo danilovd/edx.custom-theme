@@ -4,12 +4,7 @@
 //@import 'vendor/bi-app/bi-app-ltr'; // set the layout for left to right languages
 
 @import "myvariables";
-@import 'firstdigital_common';
-@import "firstdigital_header";
-@import "firstdigital_footer";
-@import "firstdigital_landing";
-@import "firstdigital_course";
-@import "firstdigital_carousel";
+
 
 
 // base - utilities
@@ -26,5 +21,12 @@
 
 //@import 'bootstrap/scss/bootstrap';
 @import 'bootstrap/lms-main';
+
+@import 'firstdigital_common';
+@import "firstdigital_header";
+@import "firstdigital_footer";
+@import "firstdigital_landing";
+@import "firstdigital_course";
+@import "firstdigital_carousel";
 
 @import "overrides";
