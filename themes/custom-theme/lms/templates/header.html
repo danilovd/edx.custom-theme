@@ -9,7 +9,7 @@ from django.urls import reverse
 from openedx.core.djangolib.markup import HTML, Text
 %>
 
-<header class="navigation-container header-global ${'slim' if course else ''}">
+<header>
 
     % if user.is_authenticated:
     <%include file="navbar-authenticated.html" args="online_help_token=online_help_token"/>
