@@ -176,6 +176,13 @@
   }
 }
 
+.fd-faculty-card-content {
+  display: flex;
+  flex-direction: column;
+  @extend .flex-md-row;
+  @extend .align-items-center;
+}
+
 a.fd-faculty-card:hover {
 
   text-decoration: none;
