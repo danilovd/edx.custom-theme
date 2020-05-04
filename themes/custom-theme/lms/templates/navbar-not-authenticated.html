@@ -10,21 +10,22 @@ from six import text_type
 %>
 
 
-<div id="non-auth-header">
+<nav id="non-auth-header" class="navbar navbar-expand-md bg-dark navbar-dark">
     <a class="nav-link" href="/">
         <img id="fd-header-logo" src="${static.url('images/logo.png')}">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        % if request.path == '/':
+    % if request.path == '/':
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <div class="header-buttons">
             <a id="fd-login" class="btn btn-outline-primary" href="/login">Войти</a>
             <a id="fd-register" class="btn btn-primary" href="/register">Начать учится бесплатно</a>
         </div>
-        % endif
     </div>
+    % endif
 
-</div>
+</nav>
