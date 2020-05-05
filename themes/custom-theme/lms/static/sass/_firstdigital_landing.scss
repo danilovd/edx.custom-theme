@@ -294,8 +294,12 @@ a.fd-faculty-card:hover {
   }
 
   i {
-    color: $bright-red;
-    font-size: 2em;
+    color: $cardinal-red;
+    font-size: 5em;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   .teacher-card {
