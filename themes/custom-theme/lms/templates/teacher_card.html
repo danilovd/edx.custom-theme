@@ -3,7 +3,7 @@
 <%namespace name='static' file='/static_content.html'/>
 <%page args="avatar,teacher_name,university_name" expression_filter="h"/>
 
-<div class="card teacher-card">
+<div class="card teacher-card d-flex justify-content-center w-100">
     <div class="avatar card-img-top mx-auto rounded-circle img-fluid" style="background-image: url(&quot;${static.url(avatar)}&quot;); background-size: cover"alt="Teacher avatar"></div>
     <div class="card-body">
         <h3 class="card-title text-center font-weight-bold">${teacher_name}</h3>
