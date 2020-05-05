@@ -134,7 +134,7 @@
   transition-property: transform,-webkit-transform;
   transition-timing-function: ease-in-out;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 10px;
   border-radius: 10px;
 }
 
@@ -291,6 +291,11 @@ a.fd-faculty-card:hover {
   h2 {
     font-weight: bold;
     margin-bottom: 2em;
+  }
+
+  i {
+    color: $bright-red;
+    font-size: 2em;
   }
 
   .teacher-card {
