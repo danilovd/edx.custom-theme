@@ -5,7 +5,7 @@
 
 <div id="teachers" class="container-fluid text-center my-3">
     <h2>Авторы курсов</h2>
-    <div class="row mx-auto my-auto d-none d-md-block">
+    <div class="row mx-auto my-auto d-none d-md-flex justify-content-center">
         <div class="col-md-2">
             <%include file="teacher_card.html" args="teacher_name='David Malan 1', university_name='Harvard',
             avatar='images/teachers/david_malan.png'" />
@@ -28,7 +28,7 @@
         </div>
     </div>
 
-    <div id="teachersCarousel" class="carousel slide d-md-none d-lg-block" data-ride="carousel">
+    <div id="teachersCarousel" class="carousel slide d-block d-md-none" data-ride="carousel">
         <div class="carousel-inner">
 
             <div class="carousel-item active">
@@ -63,4 +63,6 @@
     </div>
 </div>
 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
