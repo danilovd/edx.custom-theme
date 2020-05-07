@@ -296,9 +296,6 @@ a.fd-faculty-card:hover {
     color: $cardinal-red;
     font-size: 5em;
     text-decoration: none;
-    &:hover {
-      text-decoration: none;
-    }
   }
 
   .teacher-card {
@@ -310,6 +307,12 @@ a.fd-faculty-card:hover {
     .avatar {
       width: 120px;
       height: 120px;
+    }
+  }
+
+  #teachersCarousel {
+    a:hover {
+      text-decoration: none;
     }
   }
 }
