@@ -7,7 +7,7 @@
   width: 100%;
   padding: 2em;
 
-  h2 {
+  h2, h3 {
     color: $fd-grey;
   }
 
@@ -16,7 +16,7 @@
   }
 
   .edx-logo img {
-    max-width: 200px;
+    max-width: 100px;
     width: 100%;
     margin-top: 2em;
   }
@@ -33,12 +33,13 @@
 
       &:hover {
         text-decoration: none;
+        color: $stanford-white;
       }
     }
 
     i {
       color: $fd-grey;
-      font-size: 3em;
+      font-size: 2em;
       font-weight: bold;
       text-decoration: none;
     }
