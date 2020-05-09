@@ -197,70 +197,67 @@ a.fd-faculty-card:hover {
   outline: 0;
 }
 
-#featured-courses  {
+.fd-course {
+  overflow: hidden;
+  min-height: 480px;
+  width: 300px;
+  .course-name {
+    color: $stanford-black;
+    font-weight: 700;
+    font-size: 24px;
+  }
 
-    .fd-course {
-      overflow: hidden;
-      min-height: 480px;
-      width: 300px;
-      .course-name {
-        color: $stanford-black;
-        font-weight: 700;
-        font-size: 24px;
-      }
+  .course-organization {
+    color: $cardinal-red;
+  }
 
-      .course-organization {
-        color: $cardinal-red;
-      }
+  .course-number {
+    color: $cool-gray;
+  }
 
-      .course-number {
-        color: $cool-gray;
-      }
+  .course-date {
+    color: $stanford-black;
+  }
 
-      .course-date {
-        color: $stanford-black;
-      }
+  p {
+    color: $stanford-black;
+  }
 
-      p {
-        color: $stanford-black;
-      }
-
-      .course-duration, .course-complexity {
-        p {
-          margin: 0 0 0 10px;
-        }
-      }
-
-      .course-duration {
-        i {
-          color: $cardinal-red;
-        }
-      }
-
-      .course-duration .course-complexity {
-        margin-right: auto;
-        margin-left: auto;
-      }
-
-      img {
-        width: 100%;
-      }
-
-
-      .course-info {
-        height: auto;
-        padding: 1em;
-
-        .course-title {
-          margin: 5px 0 5px 0;
-        }
-      }
+  .course-duration, .course-complexity {
+    p {
+      margin: 0 0 0 10px;
     }
+  }
 
-    .fd-course:active, .fd-course:hover {
-      text-decoration: none;
-      outline: 0;
+  .course-duration {
+    i {
+      color: $cardinal-red;
     }
+  }
+
+  .course-duration .course-complexity {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  img {
+    width: 100%;
+  }
+
+
+  .course-info {
+    height: auto;
+    padding: 1em;
+
+    .course-title {
+      margin: 5px 0 5px 0;
+    }
+  }
+}
+
+.fd-course:active, .fd-course:hover {
+  text-decoration: none;
+  outline: 0;
 }
 
 .learn-more {
