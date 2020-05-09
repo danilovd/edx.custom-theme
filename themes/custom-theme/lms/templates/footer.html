@@ -1,26 +1,63 @@
 ## mako
-<%page expression_filter="h"/>
-<%!
-from django.urls import reverse
-from django.utils.translation import ugettext as _
-from branding.api import get_footer
-from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_enabled
-%>
-<% footer = get_footer(is_secure=is_secure) %>
+
 <%namespace name='static' file='static_content.html'/>
 
-<div class="wrapper wrapper-footer">
-    <%include file="${static.get_template_path(relative_path='fd-footer.html')}"  />
-</div>
 
-% if include_dependencies:
-<%static:js group='base_vendor'/>
-<%static:css group='style-vendor'/>
-<%include file="widgets/segment-io.html" />
-<%include file="widgets/segment-io-footer.html" />
-% endif
-% if footer_css_urls:
-% for url in footer_css_urls:
-<link rel="stylesheet" type="text/css" href="${url}"></link>
-% endfor
-% endif
+<div id="fd-footer" class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 text-left d-flex flex-column">
+            <h2 class="mb-2 font-weight-bold">Направления</h2>
+            <a class="footer-link" href="#">Разработка</a>
+            <a class="footer-link" href="#">ИИ</a>
+            <a class="footer-link" href="#">Цифровой бизнес</a>
+            <a class="footer-link" href="#">Дизайн</a>
+            <a class="footer-link" href="#">Личностный рост</a>
+        </div>
+        <div class="col-lg-3 col-md-6 text-left d-flex flex-column">
+            <h2 class="mb-2 font-weight-bold">Ресурсы</h2>
+            <a class="footer-link" href="#">Журнал</a>
+            <a class="footer-link" href="#">Форум</a>
+            <a class="footer-link" href="#">Чат</a>
+            <a class="footer-link" href="#">Центр развития карьеры</a>
+        </div>
+        <div class="col-lg-3 col-md-6 text-left d-flex flex-column">
+            <h2 class="mb-2 font-weight-bold">Об институте</h2>
+            <a class="footer-link" href="#">Миссия</a>
+            <a class="footer-link" href="#">Лицензия</a>
+            <a class="footer-link" href="#">Правовая информация</a>
+            <a class="footer-link" href="#">Вакансии</a>
+            <a class="footer-link" href="#">Для СМИ</a>
+            <a class="footer-link" href="#">Контакты</a>
+        </div>
+        <div class="col-lg-3 col-md-6 text-left d-flex flex-column">
+            <div class="mb-3 fd-logo">
+                <a href="http://www.firstdigital.institute">
+                    <img src="${static.url('images/fd_logo_dark.png')}" alt="First Digital Institute"/>
+                </a>
+            </div>
+
+            <div class="social-links d-flex flex-nowrap">
+                <a id="sl-fb" href="#">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a id="sl-vk" href="#">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a id="sl-ig" href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a id="sl-tg" href="#">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="edx-logo">
+                <img src="${static.url('images/partnership/openedx_logo_light.png')}">
+            </div>
+        </div>
+    </div>
+</div>
