@@ -22,10 +22,6 @@ displayname = get_enterprise_learner_generic_name(request) or username
 
 <div class="nav-item nav-item-hidden-collapsed">
     <div class="nav align-items-center">
-        <a class="menu-title mr-2" href="${reverse('dashboard')}">
-            <span class="sr-only">${_("Dashboard for:")}</span>
-            <img class="user-image-frame" src="${profile_image_url}" alt="${username}">
-        </a>
         <div class="dropdown">
             <a class="dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">${username}</a>
             <ul role="menu" class="dropdown-menu dropdown-menu-right" id="${_("Usermenu")}" aria-labelledby="dropdownMenuLink" tabindex="-1">
