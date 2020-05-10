@@ -2,7 +2,7 @@
 <%namespace name='static' file='static_content.html'/>
 <%! from django.utils.translation import ugettext as _ %>
 
-<div id="featured-courses" class="d-flex justify-content-center">
+<div id="featured-courses" class="courses-container d-flex justify-content-center">
     % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
 
     <div class="d-flex flex-column flex-lg-row">
