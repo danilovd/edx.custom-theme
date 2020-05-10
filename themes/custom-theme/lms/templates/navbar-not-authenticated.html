@@ -10,22 +10,22 @@ from six import text_type
 %>
 
 <nav class="navbar navbar-expand-md navbar-default fixed-top">
-    <div class="container-fluid navbar-content">
-        <a class="nav-link" href="/">
-            <img id="fd-header-logo" src="${static.url('images/logo.png')}">
-        </a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <i class="fas fa-bars"></i>
-        </button>
+    <a class="nav-link" href="/">
+        <img id="fd-header-logo" src="${static.url('images/logo.png')}">
+    </a>
 
-        % if request.path == '/':
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <div class="header-buttons">
-                <a id="fd-login" class="btn btn-outline-primary" href="/login">Войти</a>
-                <a id="fd-register" class="btn btn-primary" href="/register">Начать учиться бесплатно</a>
-            </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    % if request.path == '/':
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="header-buttons">
+            <a id="fd-login" class="btn btn-outline-primary" href="/login">Войти</a>
+            <a id="fd-register" class="btn btn-primary" href="/register">Начать учиться бесплатно</a>
         </div>
-        % endif
     </div>
+    % endif
+
 </nav>
