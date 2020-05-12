@@ -205,6 +205,11 @@ a.fd-faculty-card:hover {
     min-height: 480px;
     width: 300px;
 
+    .cover-image {
+      height: 200px;
+      overflow: hidden;
+    }
+
     .course-name {
       color: $stanford-black;
       font-weight: 700;
