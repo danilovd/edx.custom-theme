@@ -7,9 +7,11 @@ from six import text_type
 import json
 %>
 <%
-  def _get_teacher():
-      json_data = '{"teacher": "test teacher"}'
-      return json.loads(json_data)["teacher"]
+  def _get_teacher(json_data):
+      if json_data:
+          return json.loads(json_data)["teacher"]
+      else:
+          return 'undefined'
 %>
 <%page args="course" expression_filter="h"/>
 <a class="fd-course fd-card" href="${reverse('about_course', args=[text_type(course.id)])}">
@@ -21,7 +23,7 @@ import json
     </header>
     <div class="course-info" aria-hidden="true">
       <h3 class="course-name">${course.display_name_with_default}</h3>
-      <p>${_get_teacher()}</p>
+      <p>${_get_teacher(course.short_description)}</p>
       <div class="d-flex flex-nowrap align-items-end">
         <div class="course-duration d-flex flex-nowrap mr-2">
             <i class="far fa-calendar-alt"></i>
