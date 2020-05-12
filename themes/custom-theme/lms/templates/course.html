@@ -4,6 +4,12 @@
 from django.utils.translation import ugettext as _
 from django.urls import reverse
 from six import text_type
+import json
+%>
+<%
+  def _get_teacher():
+      json_data = '{"teacher": "test teacher"}'
+      return json.loads(json_data)["teacher"]
 %>
 <%page args="course" expression_filter="h"/>
 <a class="fd-course fd-card" href="${reverse('about_course', args=[text_type(course.id)])}">
@@ -15,7 +21,7 @@ from six import text_type
     </header>
     <div class="course-info" aria-hidden="true">
       <h3 class="course-name">${course.display_name_with_default}</h3>
-      <p>Дэвид Малан, профессор Гарвардского университета</p>
+      <p>${_get_teacher()}</p>
       <div class="d-flex flex-nowrap align-items-end">
         <div class="course-duration d-flex flex-nowrap mr-2">
             <i class="far fa-calendar-alt"></i>
