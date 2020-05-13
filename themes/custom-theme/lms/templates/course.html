@@ -7,9 +7,9 @@ from six import text_type
 import json
 %>
 <%
-  def _get_teacher(json_data):
+  def _get_course_property(json_data, property_name):
       if json_data:
-          return json.loads(json_data)["teacher"]
+          return json.loads(json_data)[property_name]
       else:
           return 'undefined'
 %>
@@ -23,11 +23,11 @@ import json
     </header>
     <div class="course-info" aria-hidden="true">
       <h3 class="course-name">${course.display_name_with_default}</h3>
-      <p>${_get_teacher(course.short_description)}</p>
+      <p>${_get_course_property(course.short_description, "teacher")}</p>
       <div class="d-flex flex-nowrap align-items-end">
         <div class="course-duration d-flex flex-nowrap mr-2">
             <i class="far fa-calendar-alt"></i>
-            <p>3 недели</p>
+            <p>${_get_course_property(course.short_description, "duration")}</p>
         </div>
         <div class="course-complexity d-flex flex-nowrap ml-2">
           <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@ import json
             <rect x="16" width="6" height="6" fill="#C4C4C4"/>
             <rect x="8" y="7" width="6" height="6" fill="#C4C4C4"/>
           </svg>
-          <p class="course-complexity-title">Начальный</p>
+          <p class="course-complexity-title">${_get_course_property(course.short_description, "complexity")}</p>
         </div>
       </div>
     </div>
