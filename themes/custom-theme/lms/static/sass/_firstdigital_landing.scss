@@ -137,6 +137,7 @@
   text-decoration: none;
   margin: 10px;
   border-radius: 10px;
+  padding: 1em;
 }
 
 .fd-card:active, .fd-card:hover {
@@ -169,7 +170,6 @@
 
 .fd-faculty-card {
   @extend .fd-card;
-  padding: 1em;
   text-decoration: none;
   svg {
     width: 80px;
