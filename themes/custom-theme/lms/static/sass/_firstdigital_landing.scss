@@ -136,7 +136,7 @@
   transition-timing-function: ease-in-out;
   text-decoration: none;
   border-radius: 10px;
-  margin: 0 10px;
+  margin: 10px 10px;
 }
 
 .fd-card:active, .fd-card:hover {
@@ -169,6 +169,8 @@
 
 .fd-faculty-card {
   @extend .fd-card;
+  padding: 1em;
+
   text-decoration: none;
   svg {
     width: 80px;
