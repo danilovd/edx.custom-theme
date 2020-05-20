@@ -1,0 +1,325 @@
+@import "palette";
+@import "myvariables";
+
+.section-header {
+  text-align: center;
+}
+
+.partnership {
+
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $stanford-white;
+  position:relative;
+  z-index: 100;
+
+  .partner-logo {
+    img {
+      max-width: 150px;
+    }
+  }
+}
+
+.marketing-hero {
+  margin-top: 80px;
+
+  .jumbotron-fluid {
+
+    min-height: 600px;
+
+    h1, h2, h3, h4, h5, p {
+      color: $gray-400;
+    }
+
+    h1 {
+      font-size: 2em;
+      @media (min-width: $breakpoint-tablet) {
+        font-size: 3.5em;
+      }
+    }
+    h2 {
+      font-size: 1em;
+      @media (min-width: $breakpoint-tablet) {
+        font-size: 2em;
+      }
+    }
+
+    #join-button {
+      font-size: 1.5em;
+    }
+  }
+}
+
+// BENEFITS
+
+.marketing {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  .featurette-image {
+    display:block;
+    max-width: 250px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+  }
+
+  h2, h3 {
+    font-weight: bold;
+  }
+
+  .video-embed-field-responsive-video {
+
+     display: none;
+
+     iframe {
+       margin-left: auto;
+       margin-right: auto;
+     }
+
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      width: 100%;
+    }
+  }
+}
+
+.featurette-heading {
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: -.05rem;
+
+}
+
+// FACULTIES, COURSES
+
+#approach {
+  h2, h3 {
+    font-weight: bold;
+  }
+}
+
+#faculties {
+  h2, h3 {
+    font-weight: bold;
+  }
+}
+
+#featured-courses {
+
+  h2, h3 {
+    font-weight: bold;
+  }
+}
+
+.courses-listing {
+  display: flex;
+  justify-content: center;
+}
+
+.courses-listing-item {
+  max-width: 20rem;
+}
+
+.fd-card {
+
+  background-color: $stanford-white;
+  display: block;
+  box-shadow: 1px 4px 7px rgba(46,45,41,0.35);
+  -webkit-box-shadow: 1px 4px 7px rgba(46,45,41,0.35);
+  flex-direction: column;
+  transition-duration: 0.15s;
+  transition-property: transform,-webkit-transform;
+  transition-timing-function: ease-in-out;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+.fd-card:active, .fd-card:hover {
+  -webkit-transform: scale3d(1.05,1.05,1);
+  transform: scale3d(1.05,1.05,1);
+}
+
+.fd-benefit {
+  padding: 2em;
+  text-align: center;
+  max-width: 20rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+  h2, h3 {
+    font-weight: bold;
+  }
+
+  i {
+    font-size: 2em;
+    color: $cardinal-red;
+  }
+}
+
+.benefit-card {
+  @extend .fd-benefit;
+  display: block;
+  flex-direction: column;
+}
+
+.fd-faculty-card {
+  @extend .fd-card;
+  padding: 1em;
+
+  text-decoration: none;
+  svg {
+    width: 80px;
+    heigth: 80px;
+  }
+  width: 300px;
+  margin: 10px 10px;
+
+  h4, h5 {
+    width: 100%;
+    color: $stanford-black;
+    font-weight: 900;
+  }
+}
+
+.fd-faculty-card-content {
+  display: flex;
+  flex-direction: column;
+  @extend .flex-md-row;
+  @extend .align-items-center;
+}
+
+a.fd-faculty-card:hover {
+
+  text-decoration: none;
+  outline: 0;
+}
+
+.courses-container {
+  .fd-course {
+    overflow: hidden;
+    min-height: 480px;
+    width: 300px;
+
+    .cover-image {
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .course-name {
+      color: $stanford-black;
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    .course-organization {
+      color: $cardinal-red;
+    }
+
+    .course-number {
+      color: $cool-gray;
+    }
+
+    .course-date {
+      color: $stanford-black;
+    }
+
+    p {
+      color: $stanford-black;
+    }
+
+    .course-duration, .course-complexity {
+      p {
+        margin: 0 0 0 10px;
+      }
+    }
+
+    .course-duration {
+      i {
+        color: $cardinal-red;
+      }
+    }
+
+    .course-duration .course-complexity {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    img {
+      width: 100%;
+    }
+
+
+    .course-info {
+      height: auto;
+      padding: 1em;
+
+      .course-title {
+        margin: 5px 0 5px 0;
+      }
+    }
+  }
+
+  .fd-course:active, .fd-course:hover {
+    text-decoration: none;
+    outline: 0;
+  }
+}
+
+.learn-more {
+  padding: 1rem;
+}
+
+.course-info {
+  header.course-profile {
+    background: unset;
+    box-shadow: none;
+    border-bottom: none;
+    height: unset;
+    padding-top: unset;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    .intro-inner-wrapper {
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
+
+#teachers {
+
+  h2, h3 {
+    font-weight: bold;
+  }
+
+  i {
+    color: $cardinal-red;
+    font-size: 5em;
+    text-decoration: none;
+  }
+
+  .teacher-card {
+
+    max-width: 300px;
+    border: none;
+    margin: 0 10px;
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  #teachersCarousel {
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+

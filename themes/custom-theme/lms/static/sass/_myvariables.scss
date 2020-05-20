@@ -2,6 +2,12 @@
 
 // Variables
 
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-large: 1200px;
+
+
 // Restated Bootstrap Variables
 
 $white: #fff !default;
@@ -16,9 +22,68 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
-$primary: $cardinal-red !default;
-$secondary: $sandhill !default;
 
-$primary-font: Roboto Slab, serif;
-$secondary-font: Roboto, serif;
-$button-font: Open Sans, serif;
+
+$primary: $bright-red !default;
+$secondary: $stanford-white !default;
+$success: $grass !default;
+$info: $sky;
+$warning: $sun;
+$danger: $bright-red;
+
+$primary-font: 'Source Sans Pro', sans-serif;
+$secondary-font: 'Source Sans Pro', sans-serif;
+
+// open edx variables
+
+$m-blue: $primary;
+$m-blue-l1: $bright-red !default;
+$m-blue-l2: $bright-red !default;
+$m-blue-l3: $bright-red !default;
+$m-blue-l4: tint($m-blue, 90%) !default;
+$m-blue-l5: tint($m-blue, 95%) !default;
+$m-blue-l6: $bright-red !default;
+$m-blue-d1: $bright-red !default;
+$m-blue-d2: $bright-red !default;
+$m-blue-d3: $bright-red !default;
+$m-blue-d4: $dark-red !default;
+$m-blue-d5: $bright-red !default;
+$m-blue-d6: $bright-red !default;
+$m-blue-t0: rgba($m-blue, 0.125) !default;
+$m-blue-t1: rgba($m-blue, 0.25) !default;
+$m-blue-t2: rgba($m-blue, 0.5) !default;
+$m-blue-t3: rgba($m-blue, 0.75) !default;
+
+
+
+$shadow-l1: rgba(0, 0, 0, 0.25);
+$baseline: 20px;
+$light-gray: $gray-500;
+$link-color: $bright-blue;
+$serif: $primary-font;
+$font-family-sans-serif: $secondary-font;
+$lighter-base-font-color: $stanford-black;
+$course-profile-bg: none;
+$homepage-bg-image: none;
+$button-color: $bright-red;
+$course-header-bg: none;
+$action-primary-fg: $stanford-white;
+$action-primary-bg: $cardinal-red;
+$m-blue-d3: $cardinal-red;
+
+$gray-l5: $stanford-white;
+
+// .btn-brand
+$btn-brand-border-color: $uchicago-red;
+$btn-brand-background: $uchicago-red;
+$btn-brand-color: $stanford-white;
+
+// register screen, removing blue colors
+$blue: $dark-red;
+$link-hover: $dark-red;
+$uxpl-blue-hover-active: $dark-red;
+
+
+// courses
+
+$course-card-height: 500px;

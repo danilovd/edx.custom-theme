@@ -1,48 +1,17 @@
+@import "myvariables";
+
 @import 'bourbon/bourbon'; // lib - bourbon
 @import 'vendor/bi-app/bi-app-ltr'; // set the layout for left to right languages
-
-// BASE  *default edX offerings*
-// ====================
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
-@import "bootstrap4/bootstrap";
-@import "myvariables";
-
-$shadow-l1: rgba(0, 0, 0, 0.25);
-$baseline: 20px;
-$light-gray: $gray-500;
-$link-color: $dark-red;
-$serif: 'Roboto Slab', serif;
-$font-family-sans-serif: Roboto Slab, serif;
-$lighter-base-font-color: $stanford-black;
-$course-profile-bg: none;
-$homepage-bg-image: none;
-$button-color: $light-red;
-$course-header-bg: none;
-$action-primary-fg: $stanford-white;
-$action-primary-bg: $cardinal-red;
-$m-blue-d3: $cardinal-red;
-$gray-l5: $stanford-white;
-
-// base - utilities
-@import 'base/reset';
-@import 'base/variables-ltr';
-@import 'base/mixins';
-
-@mixin border-radius($pixel...) {
-  border-radius: $pixel;
-}
-
-// This comment is used by preprocess_assets.py to include resources from a
-// theme, for old-style deprecated theming.
-//<THEME-OVERRIDE>
-
+@import 'base/build';
 @import 'build-lms-v1'; // shared app style assets/rendering
 
+//@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap/lms-main';
 
-// FIRST DIGITAL - CUSTOM THEMING
-@import "myvariables";
-@import 'firstdigital';
-@import "bootstrap-overrides";
+@import 'firstdigital_common';
+@import "firstdigital_header";
+@import "firstdigital_footer";
+@import "firstdigital_landing";
+@import "firstdigital_course";
+
+@import "overrides";

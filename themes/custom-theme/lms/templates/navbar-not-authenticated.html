@@ -9,15 +9,23 @@ from django.utils.translation import ugettext as _
 from six import text_type
 %>
 
+<nav class="navbar navbar-expand-md navbar-default fixed-top">
 
-<nav class="navbar navbar-expand-md">
+    <a class="nav-link" href="/">
+        <img id="fd-header-logo" src="${static.url('images/logo.png')}">
+    </a>
 
-    <div id="non-auth-header" class="d-flex align-items-center">
-        <a class="nav-link" href="#">
-            <img id="fd-header-logo" src="${static.url('images/logo.png')}">
-        </a>
-        <a id="fd-login" class="btn btn-primary" href="/login">${_("Sign in")}</a>
-        <!--a id="fd-register" class="btn btn-primary" href="/register">${_("Register")}</a-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    % if request.path == '/':
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="header-buttons">
+            <a id="fd-login" class="btn btn-outline-primary" href="/login">Войти</a>
+            <a id="fd-register" class="btn btn-primary" href="/register">Начать учиться бесплатно</a>
+        </div>
     </div>
+    % endif
 
 </nav>

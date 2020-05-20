@@ -1,0 +1,71 @@
+@import "palette";
+
+#fd-footer {
+
+  background-color: $cool-gray;
+  margin-top: 3rem;
+  width: 100%;
+  padding: 2em;
+
+  h2, h3 {
+    color: $fd-grey;
+  }
+
+  .footer-link {
+    color: $fd-grey;
+
+    &:hover {
+      color: $stanford-white;
+    }
+  }
+
+  .edx-logo img {
+    max-width: 150px;
+    width: 100%;
+    margin-top: 2em;
+  }
+
+  .fd-logo img {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .social-links {
+
+    a {
+      margin-right: 1em;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    i {
+      color: $fd-grey;
+      font-size: 2em;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    #sl-fb:hover {
+      i {
+        color: $facebook-blue;
+      }
+    }
+    #sl-vk:hover {
+      i {
+        color: $vk-blue;
+      }
+    }
+    #sl-tg:hover {
+      i {
+        color: $tg-blue;
+      }
+    }
+    #sl-ig:hover {
+      i {
+        color: $ig-rose;
+      }
+    }
+  }
+}

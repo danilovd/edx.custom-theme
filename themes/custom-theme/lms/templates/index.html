@@ -16,21 +16,25 @@ from openedx.core.djangolib.markup import HTML, Text
 })(window,document,'script','dataLayer','GTM-N5J7TBZ');</script>
 </%block>
 
+<%block name="marketing_hero">
+    <div class="jumbotron jumbotron-fluid d-flex align-items-center" style="background-image: url(&quot;${static.url('images/cs50.cover_6.jpg')}&quot;); background-size: cover">
+        <div class="container">
+            <h1 class="display-5 text-left font-weight-bold">Курсы лучших университетов мира</h1>
+            <h1 class="display-5 text-left font-weight-bold">на русском языке</h1>
+            <h2>// Онлайн-институт цифровых навыков</h2>
+            <a id="join-button" class="btn btn-primary btn-lg mt-5" href="/courses" role="button">Найти курсы</a>
+        </div>
+    </div>
+</%block>
+
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="home">
 
-        <div class="jumbotron" style="background-image: url(&quot;${static.url('images/cs50.cover_2_shaded.png')}&quot;); background-size: cover">
-            <div class="container text-center">
-                <h1 class="display-4">Курсы лучших университетов мира</h1>
-                <h1 class="display-4">на русском языке</h1>
-                <h2>// Онлайн-институт цифровых навыков</h2>
-                <p><a class="btn fd-button-lg" href="/about" role="button">Узнать больше</a></p>
-            </div>
-        </div>
-
-        <%include file="benefits.html"/>
+        <%include file="benefits2.html"/>
+        <%include file="approach.html"/>
+        <%include file="faculties.html"/>
         <%include file="featured-courses.html" />
-        <%include file="partnership.html" />
+        <%include file="teachers.html" />
 
     </section>
 </main>
@@ -59,9 +63,4 @@ from openedx.core.djangolib.markup import HTML, Text
 <script type="text/javascript">
     $(window).load(function() {$('#signup_action').trigger("click");});
 </script>
-% endif
-% if not uses_bootstrap:
-<!-- McDaniel Oct-2018: add the Bootstrap javascript library, unless it's already included from webpack -->
-## xss-lint: disable=mako-invalid-js-filter
-<script type="text/javascript" src="${static.url('common/js/vendor/bootstrap.bundle.js')}"></script>
 % endif

@@ -1,0 +1,16 @@
+@import "myvariables";
+
+.social-sharing {
+  display: none;
+}
+
+.class-sidebar {
+  width: auto;
+  @media (min-width: $breakpoint-tablet) {
+    width: 30%;
+  }
+}
+
+.seq_contents {
+  display: none;
+}
