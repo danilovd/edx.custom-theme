@@ -79,7 +79,7 @@
                         <div class="courses-container d-flex justify-content-center">
                             <div class="d-flex flex-column flex-lg-row">
                                 %for course in courses:
-                                %if "FD1" == course.display_number_with_default|slice:"0:3"
+                                %if "FD1" == course.display_number_with_default|slice:"0:3":
                                 <div class="courses-listing-item">
                                     <%include file="../course.html" args="course=course" />
                                 </div>
