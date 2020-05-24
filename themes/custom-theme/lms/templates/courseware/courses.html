@@ -72,14 +72,39 @@
                     %endfor
                 </ul>
 
-                <div id="featured-courses" class="courses-container d-flex justify-content-center">
-                    <div class="d-flex flex-column flex-lg-row">
-                        %for course in courses:
-                        <div class="courses-listing-item">
-                            <%include file="../course.html" args="course=course" />
+                <div class="container">
+
+                    <section class="mt-5">
+                        <h2 class="font-weight-bold">Программирование</h2>
+                        <div class="courses-container d-flex justify-content-center">
+                            <div class="d-flex flex-column flex-lg-row">
+                                %for course in courses:
+                                <div class="courses-listing-item">
+                                    <%include file="../course.html" args="course=course" />
+                                </div>
+                                %endfor
+                            </div>
                         </div>
-                        %endfor
-                    </div>
+                    </section>
+                    <section class="mt-5">
+                        <h2>Искусственный интеллект</h2>
+                        <p>
+                          Курсы будут доступны в ближайшее время
+                        </p>
+                    </section>
+                    <section class="mt-5">
+                        <h2>Цифровой бизнес</h2>
+                        <p>
+                            Курсы будут доступны в ближайшее время
+                        </p>
+                    </section>
+                    <section class="mt-5">
+                        <h2>Дизайн</h2>
+                        <p>
+                            Курсы будут доступны в ближайшее время
+                        </p>
+                    </section>
+
                 </div>
             </div>
 
