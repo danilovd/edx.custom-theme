@@ -79,9 +79,11 @@
                         <div class="courses-container d-flex justify-content-center">
                             <div class="d-flex flex-column flex-lg-row">
                                 %for course in courses:
+                                %if "FD1" in course.number|slice:"0:3"
                                 <div class="courses-listing-item">
                                     <%include file="../course.html" args="course=course" />
                                 </div>
+                                %endif
                                 %endfor
                             </div>
                         </div>
