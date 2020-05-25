@@ -7,7 +7,8 @@
 <%inherit file="../main.html" />
 <%
     course_discovery_enabled = settings.FEATURES.get('ENABLE_COURSE_DISCOVERY')
-
+%>
+<%
     def is_computer_science_course(course_number):
         if course_number:
             return course_number.startswith('FD1')
