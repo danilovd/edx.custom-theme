@@ -84,14 +84,29 @@
                                     <%include file="../course.html" args="course=course" />
                                 </div>
                                 %endfor
+                                %if len(cs_courses) == 0:
+                                <p class="text-center">
+                                    Курсы будут доступны в ближайшее время
+                                </p>
+                                %endif
                             </div>
                         </div>
                     </section>
                     <section class="mt-5">
                         <h2 class="font-weight-bold text-center">Искусственный интеллект</h2>
-                        <p class="text-center">
-                          Курсы будут доступны в ближайшее время
-                        </p>
+                        <div class="d-flex flex-column flex-lg-row">
+                            <% ai_courses = [t for t in courses if t.display_number_with_default.startswith('AI')] %>
+                            %for course in ai_courses:
+                            <div class="courses-listing-item">
+                                <%include file="../course.html" args="course=course" />
+                            </div>
+                            %endfor
+                            %if len(ai_courses) == 0:
+                            <p class="text-center">
+                                Курсы будут доступны в ближайшее время
+                            </p>
+                            %endif
+                        </div>
                     </section>
                     <section class="mt-5">
                         <h2 class="font-weight-bold text-center">Цифровой бизнес</h2>
