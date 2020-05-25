@@ -8,14 +8,6 @@
 <%
     course_discovery_enabled = settings.FEATURES.get('ENABLE_COURSE_DISCOVERY')
 %>
-<%
-    def is_computer_science_course(course_number):
-        if course_number:
-            return course_number.startswith('FD1')
-        else
-            return False
-
-%>
 
 <%namespace name='static' file='../static_content.html'/>
 
@@ -87,7 +79,9 @@
                         <div class="courses-container d-flex justify-content-center">
                             <div class="d-flex flex-column flex-lg-row">
                                 %for course in courses:
-                                %if is_computer_science_course(course.display_number_with_default):
+                                <% is_computer_science_course = course.display_number_with_default.startswith('FD1') %>
+
+                                %if is_computer_science_course:
                                 <div class="courses-listing-item">
                                     <%include file="../course.html" args="course=course" />
                                 </div>
