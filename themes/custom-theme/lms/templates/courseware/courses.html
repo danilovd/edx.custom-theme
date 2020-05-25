@@ -7,6 +7,13 @@
 <%inherit file="../main.html" />
 <%
     course_discovery_enabled = settings.FEATURES.get('ENABLE_COURSE_DISCOVERY')
+
+    def is_computer_science_course(course_number):
+        if course_number:
+            return course_number.startswith('FD1')
+        else
+            return False
+
 %>
 
 <%namespace name='static' file='../static_content.html'/>
@@ -28,14 +35,6 @@
     </%static:require_module>
 </%block>
 % endif
-
-<%
-    def is_computer_science_course(course_number):
-        if course_number:
-            return course_number.startswith('FD1')
-        else
-            return False
-%>
 
 <%block name="pagetitle">${_("Courses")}</%block>
 
