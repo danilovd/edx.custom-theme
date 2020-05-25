@@ -74,11 +74,11 @@
 
                 <div class="container">
 
-                    <section class="mt-5">
+                    <section id="cs" class="mt-5">
                         <h2 class="font-weight-bold text-center">Программирование</h2>
                         <div class="courses-container d-flex justify-content-center">
                             <div class="d-flex flex-column flex-lg-row">
-                                <% cs_courses = [t for t in courses if t.display_number_with_default.startswith('FD')] %>
+                                <% cs_courses = [t for t in courses if t.display_number_with_default.startswith('CS')] %>
                                 %for course in cs_courses:
                                 <div class="courses-listing-item">
                                     <%include file="../course.html" args="course=course" />
@@ -92,7 +92,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="mt-5">
+                    <section id="ai" class="mt-5">
                         <h2 class="font-weight-bold text-center">Искусственный интеллект</h2>
                         <div class="d-flex flex-column flex-lg-row">
                             <% ai_courses = [t for t in courses if t.display_number_with_default.startswith('AI')] %>
@@ -108,18 +108,56 @@
                             %endif
                         </div>
                     </section>
-                    <section class="mt-5">
+                    <section id="digital" class="mt-5">
                         <h2 class="font-weight-bold text-center">Цифровой бизнес</h2>
-                        <p class="text-center">
-                            Курсы будут доступны в ближайшее время
-                        </p>
+                        <div class="d-flex flex-column flex-lg-row">
+                            <% db_courses = [t for t in courses if t.display_number_with_default.startswith('DB')] %>
+                            %for course in db_courses:
+                            <div class="courses-listing-item">
+                                <%include file="../course.html" args="course=course" />
+                            </div>
+                            %endfor
+                            %if len(db_courses) == 0:
+                            <p class="text-center">
+                                Курсы будут доступны в ближайшее время
+                            </p>
+                            %endif
+                        </div>
                     </section>
-                    <section class="mt-5">
+                    <section id="ux" class="mt-5">
                         <h2 class="font-weight-bold text-center">Дизайн</h2>
-                        <p class="text-center">
-                            Курсы будут доступны в ближайшее время
-                        </p>
+                        <div class="d-flex flex-column flex-lg-row">
+                            <% ux_courses = [t for t in courses if t.display_number_with_default.startswith('UX')] %>
+                            %for course in ux_courses:
+                            <div class="courses-listing-item">
+                                <%include file="../course.html" args="course=course" />
+                            </div>
+                            %endfor
+                            %if len(ux_courses) == 0:
+                            <p class="text-center">
+                                Курсы будут доступны в ближайшее время
+                            </p>
+                            %endif
+                        </div>
                     </section>
+
+                    <% other_courses = [t for t in courses if not t.display_number_with_default.startswith(('CS', 'AI', 'DB','UX'))] %>
+
+                    %if len(other_courses) > 0:
+                    <section id="other" class="mt-5">
+                        <h2 class="font-weight-bold text-center">Курсы по другим темам</h2>
+                        <div class="d-flex flex-column flex-lg-row">
+
+                            %for course in other_courses:
+                            <div class="courses-listing-item">
+                                <%include file="../course.html" args="course=course" />
+                            </div>
+                            %endfor
+
+                        </div>
+                    </section>
+                    %endif
+
 
                 </div>
             </div>
