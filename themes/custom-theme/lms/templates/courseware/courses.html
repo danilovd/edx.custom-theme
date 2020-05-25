@@ -78,7 +78,7 @@
                         <h2 class="font-weight-bold text-center">Программирование</h2>
                         <div class="courses-container d-flex justify-content-center">
                             <div class="d-flex flex-column flex-lg-row">
-                                <% cs_courses = [t for t in courses if course.display_number_with_default.startswith('FD')] %>
+                                <% cs_courses = [t for t in courses if t.display_number_with_default.startswith('FD')] %>
                                 %for course in cs_courses:
                                 <div class="courses-listing-item">
                                     <%include file="../course.html" args="course=course" />
