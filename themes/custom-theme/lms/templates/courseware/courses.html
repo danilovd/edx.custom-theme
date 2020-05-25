@@ -79,7 +79,7 @@
                         <div class="courses-container d-flex justify-content-center">
                             <div class="d-flex flex-column flex-lg-row">
                                 %for course in courses:
-                                <% is_computer_science_course = course.display_number_with_default.startswith('FD1') %>
+                                <% is_computer_science_course = course.display_number_with_default.startswith('FD') %>
 
                                 %if is_computer_science_course:
                                 <div class="courses-listing-item">
@@ -91,19 +91,19 @@
                         </div>
                     </section>
                     <section class="mt-5">
-                        <h2>Искусственный интеллект</h2>
+                        <h2 class="font-weight-bold">Искусственный интеллект</h2>
                         <p>
                           Курсы будут доступны в ближайшее время
                         </p>
                     </section>
                     <section class="mt-5">
-                        <h2>Цифровой бизнес</h2>
+                        <h2 class="font-weight-bold">Цифровой бизнес</h2>
                         <p>
                             Курсы будут доступны в ближайшее время
                         </p>
                     </section>
                     <section class="mt-5">
-                        <h2>Дизайн</h2>
+                        <h2 class="font-weight-bold">Дизайн</h2>
                         <p>
                             Курсы будут доступны в ближайшее время
                         </p>
