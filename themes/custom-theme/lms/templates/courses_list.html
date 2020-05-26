@@ -5,7 +5,7 @@
 <div id="featured-courses" class="courses-container d-flex justify-content-center">
     % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
 
-    <div class="d-flex flex-column flex-lg-row">
+    <div class="d-flex flex-column flex-xl-row">
         ## limiting the course number by using HOMEPAGE_COURSE_MAX as the maximum number of courses
         %for course in courses[:homepage_course_max]:
         <div class="courses-listing-item">
