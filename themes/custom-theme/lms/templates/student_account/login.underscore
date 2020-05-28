@@ -40,8 +40,7 @@
 
     <%= context.fields %>
 
-    <p>test</p>
-    <button type="submit" class="action action-primary action-update js-login login-button"><%- gettext("Sign in") %></button>
+    <button type="submit" class="btn btn-primary mt-3"><%- gettext("Sign in") %></button>
 
     <% if ( context.providers.length > 0 && !context.currentProvider || context.hasSecondaryProviders ) { %>
     <div class="login-providers">
