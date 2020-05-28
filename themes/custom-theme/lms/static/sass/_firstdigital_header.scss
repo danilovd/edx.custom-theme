@@ -25,6 +25,12 @@ header {
         color: $stanford-white;
       }
     }
+
+    .navbar-nav .nav-item {
+      a {
+        font-weight: bold;
+      }
+    }
   }
 
   .dropdown-menu {
