@@ -19,7 +19,7 @@
   display: none;
 }
 
-.fd-why-programming, .fd-why-this-course {
+.fd-why-programming.fd-why-this-course {
   h2 {
     font-weight: bold;
   }
@@ -29,6 +29,6 @@
   }
 }
 
-.fd-why-programming {
+.fd-why-this-course {
   background-color: $fd-grey;
 }
