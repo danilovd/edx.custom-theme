@@ -19,7 +19,7 @@
   display: none;
 }
 
-.fd-why-programming {
+.fd-why-programming .fd-why-this-course {
   h2 {
     font-weight: bold;
   }
@@ -27,4 +27,8 @@
   img {
     max-width: 120px;
   }
+}
+
+.fd-why-programming {
+  background-color: $fd-grey;
 }
