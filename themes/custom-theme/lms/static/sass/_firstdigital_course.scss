@@ -43,7 +43,7 @@
   h3 {
     font-size: 1.25em;
     @media (min-width: $breakpoint-tablet) {
-      font-size: 1em;
+      font-size: 1.75em;
     }
   }
   h4 {
@@ -80,6 +80,6 @@
   .avatar {
     height: 120px;
     width: 120px;
-    border-radius: 12px;
+    border-radius: 8px;
   }
 }
