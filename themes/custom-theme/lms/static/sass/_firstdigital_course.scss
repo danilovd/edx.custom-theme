@@ -21,19 +21,24 @@
 
 .course-info {
   .course-profile {
-    .heading-group {
-      h1 {
-        font-weight: bold;
-        font-size: 2em;
-        @media (min-width: $breakpoint-tablet) {
-          font-size: 3em;
+    .intro {
+      .main-cta {
+        a {
+          width: 100%
         }
       }
     }
   }
+
 }
 
 .fd-course-details {
+  h1 {
+    font-size: 2em;
+    @media (min-width: $breakpoint-tablet) {
+      font-size: 3em;
+    }
+  }
   h2 {
     font-size: 1.5em;
     @media (min-width: $breakpoint-tablet) {
@@ -70,7 +75,7 @@
   }
 }
 
-.fd-section-shaded {
+.fd-bg-grey {
   background-color: $fd-grey;
 }
 
