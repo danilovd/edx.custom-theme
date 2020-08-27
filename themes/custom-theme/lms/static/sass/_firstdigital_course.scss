@@ -107,11 +107,12 @@
   }
 }
 
-.fd-course-syllabus {
+.fd-course-syllabus, .fd-specialization {
   .row {
     margin-bottom: 0.25rem;
   }
 }
+
 
 .fd-course-outcomes {
 
@@ -138,4 +139,10 @@
       }
     }
   }
+}
+
+.fd-full-width {
+    position: absolute;
+    width: 100%;
+    left: 0;
 }
