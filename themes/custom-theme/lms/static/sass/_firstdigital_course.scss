@@ -24,7 +24,7 @@
     .intro {
       .main-cta {
         a {
-          width: 100%
+          width: 100%;
         }
       }
     }
@@ -104,6 +104,12 @@
     i {
       font-size: 1.5em;
     }
+  }
+}
+
+.fd-course-syllabus {
+  .row {
+    margin-bottom: 0.25rem;
   }
 }
 
