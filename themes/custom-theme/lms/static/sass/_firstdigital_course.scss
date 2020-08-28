@@ -30,40 +30,6 @@
       }
     }
   }
-
-}
-
-.fd-course-details {
-  h1 {
-    font-size: 2em;
-    @media (min-width: $breakpoint-tablet) {
-      font-size: 3em;
-    }
-  }
-  h2 {
-    font-size: 1.5em;
-    @media (min-width: $breakpoint-tablet) {
-      font-size: 2em;
-    }
-  }
-  h3 {
-    font-size: 1.25em;
-    @media (min-width: $breakpoint-tablet) {
-      font-size: 1.75em;
-    }
-  }
-  h4 {
-    font-size: 1em;
-    @media (min-width: $breakpoint-tablet) {
-      font-size: 1.5em;
-    }
-  }
-  h5 {
-    font-size: 0.75em;
-    @media (min-width: $breakpoint-tablet) {
-      font-size: 1.25em;
-    }
-  }
 }
 
 .fd-why-programming, .fd-why-this-course {
