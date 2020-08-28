@@ -1,48 +1,364 @@
-<section class="fd-course-program">
-    <h2 class="text-center font-weight-bold">Программа курса</h2>
-    <div class="row mt-3">
-        <div class="col-md d-flex flex-nowrap">
-            <img src="/static/calendar.png" height="50px" width="50px">
-            <p class="my-auto ml-2">12 недель</p>
-        </div>
-        <div class="col-md d-flex flex-nowrap">
-            <img src="/static/clock.png" height="50px" width="50px">
-            <p class="my-auto ml-2">6-18 часов в неделю</p>
-        </div>
-        <div class="col-md d-flex flex-nowrap">
-            <img src="/static/calendar.png" height="50px" width="50px">
-            <p class="my-auto ml-2">Начальный уровень</p>
-        </div>
-    </div>
-    <div class="fd-course-syllabus mt-5">
-        <div class="row">
-            <div class="col-3">
-                <h5 class="text-center font-weight-bold">Неделя</h5>
+<!-- CS50 PROGRAM - START -->
+<section class="fd-course-program py-5">
+    <div class="container">
+        <h2 class="text-center font-weight-bold">Программа курса</h2>
+        <div class="row mt-3">
+            <div class="col-md">
+                <img src="/static/calendar.png" height="50px" width="50px">
+                <p class="d-inline-block my-auto ml-2">12 недель</p>
             </div>
-            <div class="col-9">
-                <h5 class="text-center font-weight-bold">Описание</h5>
+            <div class="col-md">
+                <img src="/static/clock.png" height="50px" width="50px">
+                <p class="d-inline-block my-auto ml-2">6-18 часов в неделю</p>
+            </div>
+            <div class="col-md">
+                <img src="/static/calendar.png" height="50px" width="50px">
+                <p class="d-inline-block my-auto ml-2">Начальный уровень</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-3">
-                <div class="fd-week-number d-flex bg-primary mx-auto">
-                    <h5 class="m-auto font-weight-bold text-info">1</h5>
+
+        <!-- Syllabus -->
+        <div class="fd-course-syllabus mt-5">
+            <div class="row">
+                <div class="col-2">
+                    <h5 class="text-center font-weight-bold">Неделя</h5>
+                </div>
+                <div class="col-10">
+                    <h5 class="text-left font-weight-bold">Описание</h5>
                 </div>
             </div>
-            <div class="col-9">
-                <div class="accordion" id="accordion-week-1">
-                    <div class="" id="heading-week-1">
-                        <p class="font-weight-bold">Среда программирования Scratch</p>
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Expand</button>
+
+            <!-- WEEK 1 -->
+            <div class="row mb-1">
+                <div class="col-2 d-flex flex-column">
+                    <div class="fd-week-number d-flex bg-primary m-auto">
+                        <h4 class="m-auto font-weight-bold text-white">1</h4>
                     </div>
-                    <div id="content-week-1" class="collapse show" aria-labelledby="heading-week-1" data-parent="#accordion-week-1">
-                        <p>week 1 content</p>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="accordion p-3 m-auto w-100" id="accordion-week-1">
+                        <div class="d-flex" id="heading-week-1">
+                            <p class="font-weight-bold m-0">Среда программирования Scratch</p>
+                            <a class="ml-auto" data-toggle="collapse" href="#content-week-1">
+                                <i class="text-primary fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div id="content-week-1" class="collapse">
+                            <p>week 1 content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WEEK 2 -->
+            <div class="row">
+                <div class="col-2 d-flex flex-column">
+                    <div class="fd-week-number d-flex bg-primary m-auto">
+                        <h4 class="m-auto font-weight-bold text-white">2</h4>
+                    </div>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="accordion p-3 m-auto w-100" id="accordion-week-2">
+                        <div class="d-flex" id="heading-week-2">
+                            <p class="font-weight-bold m-0">Язык С</p>
+                            <a class="ml-auto" data-toggle="collapse" href="#content-week-2">
+                                <i class="text-primary fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div id="content-week-2" class="collapse">
+                            <p>week 2 content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- WEEK 3 -->
+            <div class="row">
+                <div class="col-2 d-flex flex-column">
+                    <div class="fd-week-number d-flex bg-primary m-auto">
+                        <h4 class="m-auto font-weight-bold text-white">3</h4>
+                    </div>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="accordion p-3 m-auto w-100" id="accordion-week-3">
+                        <div class="d-flex" id="heading-week-3">
+                            <p class="font-weight-bold m-0">Массив данных</p>
+                            <a class="ml-auto" data-toggle="collapse" href="#content-week-3">
+                                <i class="text-primary fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div id="content-week-3" class="collapse">
+                            <p>week 3 content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WEEK 4 -->
+            <div class="row">
+                <div class="col-2 d-flex flex-column">
+                    <div class="fd-week-number d-flex bg-primary m-auto">
+                        <h4 class="m-auto font-weight-bold text-white">4</h4>
+                    </div>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="accordion p-3 m-auto w-100" id="accordion-week-4">
+                        <div class="d-flex" id="heading-week-4">
+                            <p class="font-weight-bold m-0">Алгоритмы</p>
+                            <a class="ml-auto" data-toggle="collapse" href="#content-week-4">
+                                <i class="text-primary fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div id="content-week-4" class="collapse">
+                            <p>week 4 content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WEEK 5 -->
+            <div class="row">
+                <div class="col-2 d-flex flex-column">
+                    <div class="fd-week-number d-flex bg-primary m-auto">
+                        <h4 class="m-auto font-weight-bold text-white">5</h4>
+                    </div>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="accordion p-3 m-auto w-100" id="accordion-week-5">
+                        <div class="d-flex" id="heading-week-5">
+                            <p class="font-weight-bold m-0">Память</p>
+                            <a class="ml-auto" data-toggle="collapse" href="#content-week-5">
+                                <i class="text-primary fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div id="content-week-5" class="collapse">
+                            <p>week 5 content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WEEK 6 -->
+            <div class="row">
+                <div class="col-2 d-flex flex-column">
+                    <div class="fd-week-number d-flex bg-primary m-auto">
+                        <h4 class="m-auto font-weight-bold text-white">6</h4>
+                    </div>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="accordion p-3 m-auto w-100" id="accordion-week-6">
+                        <div class="d-flex" id="heading-week-6">
+                            <p class="font-weight-bold m-0">Структуры данных</p>
+                            <a class="ml-auto" data-toggle="collapse" href="#content-week-6">
+                                <i class="text-primary fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div id="content-week-6" class="collapse">
+                            <p>week 6 content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WEEK 7 -->
+            <div class="row">
+                <div class="col-2 d-flex flex-column">
+                    <div class="fd-week-number d-flex bg-primary m-auto">
+                        <h4 class="m-auto font-weight-bold text-white">7</h4>
+                    </div>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="accordion p-3 m-auto w-100" id="accordion-week-7">
+                        <div class="d-flex" id="heading-week-7">
+                            <p class="font-weight-bold m-0">Язык Python</p>
+                            <a class="ml-auto" data-toggle="collapse" href="#content-week-7">
+                                <i class="text-primary fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div id="content-week-7" class="collapse">
+                            <p>week 7 content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WEEK 8 -->
+            <div class="row">
+                <div class="col-2 d-flex flex-column">
+                    <div class="fd-week-number d-flex bg-primary m-auto">
+                        <h4 class="m-auto font-weight-bold text-white">8</h4>
+                    </div>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="accordion p-3 m-auto w-100" id="accordion-week-8">
+                        <div class="d-flex" id="heading-week-8">
+                            <p class="font-weight-bold m-0">SQL</p>
+                            <a class="ml-auto" data-toggle="collapse" href="#content-week-8">
+                                <i class="text-primary fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div id="content-week-8" class="collapse">
+                            <p>week 8 content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WEEK 9 -->
+            <div class="row">
+                <div class="col-2 d-flex flex-column">
+                    <div class="fd-week-number d-flex bg-primary m-auto">
+                        <h4 class="m-auto font-weight-bold text-white">9</h4>
+                    </div>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="accordion p-3 m-auto w-100" id="accordion-week-9">
+                        <div class="d-flex" id="heading-week-9">
+                            <p class="font-weight-bold m-0">Безопасность данных</p>
+                            <a class="ml-auto" data-toggle="collapse" href="#content-week-9">
+                                <i class="text-primary fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div id="content-week-9" class="collapse">
+                            <p>week 9 content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WEEK 10, 11, 12 -->
+            <div class="row">
+                <div class="col-2 d-flex flex-column">
+                    <div class="fd-week-number d-flex bg-primary m-auto">
+                        <h4 class="m-auto font-weight-bold text-white">10</h4>
+                    </div>
+                    <img class="d-block mx-auto" src="/static/Line_1.png" />
+                    <div class="fd-week-number d-flex bg-primary m-auto">
+                        <h4 class="m-auto font-weight-bold text-white">11</h4>
+                    </div>
+                    <img class="d-block mx-auto" src="/static/Line_1.png" />
+                    <div class="fd-week-number d-flex bg-primary m-auto">
+                        <h4 class="m-auto font-weight-bold text-white">12</h4>
+                    </div>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="accordion p-3 m-auto w-100 h-100" id="accordion-week-10">
+                        <div class="d-flex h-100 align-items-center" id="heading-week-10">
+                            <p class="font-weight-bold m-0">Специализация и финальный проект</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <h2 class="text-center font-weight-bold my-3">Специализация на выбор 10-12 недели</h2>
+
+        <div class="fd-specialization">
+        <!-- SPECIALIZATION: GAME DEVELOPMENT -->
+            <div class="row">
+                <div class="col-2 d-flex flex-column">
+                    <img class="m-auto" src="/static/gamepad.png" height="50px" width="50px"/>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="accordion p-3 m-auto w-100" id="accordion-spec-1">
+                        <div class="d-flex" id="heading-spec-1">
+                            <p class="font-weight-bold m-0">Разработка игр</p>
+                            <a class="ml-auto" data-toggle="collapse" href="#content-spec-1">
+                                <i class="text-primary fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div id="content-spec-1" class="collapse">
+                            <p>game development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SPECIALIZATION: ANDROID DEVELOPMENT -->
+            <div class="row">
+                <div class="col-2 d-flex flex-column">
+                    <img class="m-auto" src="/static/android.png" height="50px" width="50px"/>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="accordion p-3 m-auto w-100" id="accordion-spec-2">
+                        <div class="d-flex" id="heading-spec-2">
+                            <p class="font-weight-bold m-0">Мобильная разработка для Android</p>
+                            <a class="ml-auto" data-toggle="collapse" href="#content-spec-2">
+                                <i class="text-primary fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div id="content-spec-2" class="collapse">
+                            <p>android development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SPECIALIZATION: iOS DEVELOPMENT -->
+            <div class="row">
+                <div class="col-2 d-flex flex-column">
+                    <img class="m-auto" src="/static/ios.png" height="50px" width="50px"/>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="accordion p-3 m-auto w-100" id="accordion-spec-3">
+                        <div class="d-flex" id="heading-spec-3">
+                            <p class="font-weight-bold m-0">Мобильная разработка для iOS</p>
+                            <a class="ml-auto" data-toggle="collapse" href="#content-spec-3">
+                                <i class="text-primary fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div id="content-spec-3" class="collapse">
+                            <p>iOS development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SPECIALIZATION: WEB DEVELOPMENT -->
+            <div class="row">
+                <div class="col-2 d-flex flex-column">
+                    <img class="m-auto" src="/static/app.png" height="50px" width="50px"/>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="accordion p-3 m-auto w-100" id="accordion-spec-4">
+                        <div class="d-flex" id="heading-spec-4">
+                            <p class="font-weight-bold m-0">Вэб-разработка</p>
+                            <a class="ml-auto" data-toggle="collapse" href="#content-spec-4">
+                                <i class="text-primary fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div id="content-spec-4" class="collapse">
+                            <p>Web development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FINAL PROJECT -->
+            <div class="row my-5">
+                <div class="col-2 d-flex flex-column">
+                    <img class="m-auto" src="/static/flag.png" height="50px" width="50px"/>
+                </div>
+                <div class="col-10 d-flex">
+                    <div class="accordion p-3 m-auto w-100" id="accordion-final-project">
+                        <div class="d-flex" id="heading-final-project">
+                            <p class="font-weight-bold m-0">Финальный проект</p>
+                            <a class="ml-auto" data-toggle="collapse" href="#content-final-project">
+                                <i class="text-primary fas fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <div id="content-final-project" class="collapse">
+                            <p>Final project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </section>
+<!-- CS50 PROGRAM - END -->
