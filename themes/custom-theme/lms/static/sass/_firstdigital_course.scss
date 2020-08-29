@@ -26,6 +26,9 @@
       .main-cta {
         a {
           width: 100%;
+          @media (min-width: $breakpoint-tablet) {
+              width: auto;
+          }
         }
       }
     }
@@ -97,6 +100,7 @@
   .fd-certificate-sample {
     max-width: 800px;
     width: 100%;
+    height: auto;
   }
 
   ul {
