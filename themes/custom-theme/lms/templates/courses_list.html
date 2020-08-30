@@ -2,10 +2,10 @@
 <%namespace name='static' file='static_content.html'/>
 <%! from django.utils.translation import ugettext as _ %>
 
-<div id="featured-courses" class="courses-container d-flex justify-content-center">
+<div id="featured-courses" class="courses-container">
     % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
 
-    <div class="d-flex flex-column flex-md-row flex-wrap">
+    <div class="d-flex flex-column flex-md-row flex-wrap justify-content-center">
         ## limiting the course number by using HOMEPAGE_COURSE_MAX as the maximum number of courses
         %for course in courses[:homepage_course_max]:
         <div class="courses-listing-item">
