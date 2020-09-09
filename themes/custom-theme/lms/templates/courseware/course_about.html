@@ -24,7 +24,7 @@ from six import string_types
 <%block name="js_extra">
   <script type="text/javascript">
   (function() {
-    $(".register").click(function(event) {
+    $(".fd-register").click(function(event) {
       console.log('submitting class enroll form');
       $("#class_enroll_form").submit();
       event.preventDefault();
@@ -133,7 +133,7 @@ from six import string_types
                   <a href="${course_target}">
                 %endif
 
-                <span class="register disabled">${_("You are enrolled in this course")}</span>
+                <span class="fd-register disabled">${_("You are enrolled in this course")}</span>
 
                 %if show_courseware_link:
                   <strong>${_("View Course")}</strong>
@@ -145,16 +145,16 @@ from six import string_types
                   ${Text(_('This course is in your <a href="{cart_link}">cart</a>.')).format(cart_link=cart_link)}
                 </span>
               % elif is_course_full:
-                <span class="register disabled">
+                <span class="fd-register disabled">
                   ${_("Course is full")}
                 </span>
               % elif invitation_only and not can_enroll:
-                <span class="register disabled">${_("Enrollment in this course is by invitation only")}</span>
+                <span class="fd-register disabled">${_("Enrollment in this course is by invitation only")}</span>
               ## Shib courses need the enrollment button to be displayed even when can_enroll is False,
               ## because AnonymousUsers cause can_enroll for shib courses to be False, but we need them to be able to click
               ## so that they can register and become a real user that can enroll.
               % elif not is_shib_course and not can_enroll:
-                <span class="register disabled">${_("Enrollment is Closed")}</span>
+                <span class="fd-register disabled">${_("Enrollment is Closed")}</span>
               %elif can_add_course_to_cart:
                 <%
                 if user.is_authenticated:
@@ -191,7 +191,7 @@ from six import string_types
                   if professional_mode:
                     href_class = "add-to-cart"
                   else:
-                    href_class = "register btn btn-primary btn-lg fd-register"
+                    href_class = "btn btn-primary btn-lg fd-register"
                 %>
                 <a href="${reg_href}" class="${href_class}">
                   Записаться на курс
