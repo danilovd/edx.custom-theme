@@ -24,9 +24,8 @@ from six import string_types
 <%block name="js_extra">
   <script type="text/javascript">
   (function() {
-    alert("test1");
     $(".register").click(function(event) {
-      alert("submitting");
+      console.log('submitting class enroll form');
       $("#class_enroll_form").submit();
       event.preventDefault();
     });
@@ -83,9 +82,8 @@ from six import string_types
 
     %else:
 
-    alert("test2");
     $('#class_enroll_form').on('ajax:complete', function(event, xhr) {
-      alert("complete " + xhr.status);
+      console.log("class enroll form response ", xhr.status);
       if(xhr.status == 200) {
         if (xhr.responseText == "") {
           location.href = "${reverse('dashboard') | n, decode.utf8}";
@@ -193,7 +191,7 @@ from six import string_types
                   if professional_mode:
                     href_class = "add-to-cart"
                   else:
-                    href_class = "register"
+                    href_class = "register btn btn-primary btn-lg fd-register"
                 %>
                 <a href="${reg_href}" class="${href_class}">
                   Записаться на курс
