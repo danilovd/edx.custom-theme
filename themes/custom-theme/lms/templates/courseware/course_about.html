@@ -25,8 +25,9 @@ from six import string_types
   <script type="text/javascript">
   (function() {
     $(".fd-register").click(function(event) {
-      console.log('submitting class enroll form');
-      $("#class_enroll_form").submit();
+      let theform = $("#class_enroll_form");
+      console.log('submitting class enroll form', theform);
+      theform.submit();
       event.preventDefault();
     });
 
