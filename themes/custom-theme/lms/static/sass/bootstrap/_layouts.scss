@@ -12,32 +12,33 @@
   .course-tabs {
     padding: 0;
     font-size: $font-size-sm;
+    font-weight: bold;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
 
-    .navbar-nav {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .nav-item {
-      .nav-link {
-        padding: $baseline/2 $baseline*3/4 $baseline*13/20;
-        border-style: solid;
-        border-width: 0 0 $baseline/5 0;
-        border-bottom-color: transparent;
-        color: theme-color("secondary");
-      }
-
-      &.active,
-      &:hover {
-        .nav-link {
-          border-bottom-color: theme-color("primary");
-          color: theme-color("primary");
-        }
-      }
-    }
+    //.navbar-nav {
+    //  display: flex;
+    //  flex-direction: row;
+    //}
+    //
+    //.nav-item {
+    //  .nav-link {
+    //    padding: $baseline/2 $baseline*3/4 $baseline*13/20;
+    //    border-style: solid;
+    //    border-width: 0 0 $baseline/5 0;
+    //    border-bottom-color: transparent;
+    //    color: theme-color("secondary");
+    //  }
+    //
+    //  &.active,
+    //  &:hover {
+    //    .nav-link {
+    //      border-bottom-color: theme-color("primary");
+    //      color: theme-color("primary");
+    //    }
+    //  }
+    //}
   }
 
   &.container-fluid {
