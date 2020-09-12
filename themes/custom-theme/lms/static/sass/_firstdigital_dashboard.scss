@@ -6,9 +6,13 @@
 
   .wrapper-course-details {
     .course-title {
-      span {
+      a, span {
         font-weight: bold;
       }
     }
+  }
+
+  .actions-item {
+    font-weight: bold;
   }
 }
