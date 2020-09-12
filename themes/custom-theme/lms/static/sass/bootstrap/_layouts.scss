@@ -13,8 +13,8 @@
     padding: 0;
     font-size: $font-size-sm;
     font-weight: bold;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    //overflow-x: scroll;
+    //overflow-y: hidden;
     white-space: nowrap;
 
     //.navbar-nav {
@@ -75,6 +75,7 @@
 
     .page-title {
       margin-top: $baseline*0.4;
+      font-weight: bold;
     }
   }
 
@@ -101,8 +102,8 @@
 }
 
 .page-content-container {
-  border: 1px solid $border-color;
-  background-color: $body-bg;
+  //border: 1px solid $border-color;
+  //background-color: $body-bg;
   max-width: map-get($container-max-widths, xl);
   margin: 0 auto;
 }
