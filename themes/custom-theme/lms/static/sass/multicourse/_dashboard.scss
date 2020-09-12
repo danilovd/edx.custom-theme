@@ -222,40 +222,6 @@
 
           .course-actions {
 
-            // UI: course item actions
-            .action {
-              @include box-sizing(border-box);
-              @include margin-right($baseline/2);
-              @include float(right);
-
-              min-width: ($baseline*2);
-              color: $gray-d3;
-              border-radius: 3px;
-              padding: 12px;
-              border: 1px solid $white;
-              text-align: center;
-
-              &:hover, &:focus {
-                color: $gray-d3;
-                border: 1px solid $gray-l4;
-              }
-
-              // STATE: is-disabled
-              &.is-disabled {
-                color: $gray-l4;
-              }
-
-              // TYPE: facebook share
-              &.action-facebook {
-                color: $facebook-blue;
-              }
-
-              // TYPE: twitter share
-              &.action-twitter {
-                color: $twitter-blue;
-              }
-            }
-
             // UI: general actions dropdown layout
             .wrapper-action-more {
               display: inline-block;
